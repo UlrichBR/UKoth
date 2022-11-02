@@ -1,0 +1,1728 @@
+ 
+ 
+ # TRANSLATIONS OF THE LANGUAGE AND DIALOGUE FILES
+ 
+LANGUAGE:
+  command by player: '%tag% <red>Este comando debe ser utilizado por un jugador'
+  command by console: '%tag% <red>Este comando debe ser utilizado por una CONSOLA'
+  disabled world command: '%tag% <red>Los comandos de Koth están desactivados en este mundo'
+  no permission: '%tag% <red>No tienes permisos'
+  currency vault: Dinero
+  currency playerpoints: Puntos
+  disabled region command: '%tag% <red>No puede utilizar estos comandos en esta región'
+  player no actions: '%tag% <red>No hay acciones pendientes'
+  disabled function: '%tag% <red>Esta función está desactivada'
+  wand cleared: ' <gray>- La herramienta ha sido limpiada'
+  gui error: '%tag% <red>Error con el panel, contacte un administrador'
+  value greater than: '%tag% <red>El valor debe ser mayor a 1'
+  no group: Sin grupo
+  all days: Todos los dias
+  player offline: '%tag% <red>Jugador desconectado o no encontrado'
+  help admin pagination prev: <click:run_command:"/ukoth help %page%"><hover:show_text:'<green>Click para volver'><gradient:#d15f21:#cd2727><< Anterior</gradient></hover></click>
+  help admin pagination next: <click:run_command:"/ukoth help %page%"><hover:show_text:'<green>Click para avanzar'><gradient:#cd2727:#d15f21>Siguiente >></gradient></hover></click>
+  help admin pagination separer: <#cd2727>|
+  help player pagination prev: <click:run_command:"/koth help %page%"><hover:show_text:'<green>Click para volver'><gradient:#d15f21:#cd2727><< Anterior</gradient></hover></click>
+  help player pagination next: <click:run_command:"/koth help %page%"><hover:show_text:'<green>Click para avanzar'><gradient:#cd2727:#d15f21>Siguiente >></gradient></hover></click>
+  help player pagination separer: <#cd2727>|
+  help list empty: ' <red>- No hay nada en esta lista.'
+  help ukoth header: '<#cd2727><bold>Ayuda AdminKoth:</bold> <gray>(%page%/%pages%) <newline> <green>[] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <newline> '
+  help ukoth header subcommand: '<newline><#cd2727><bold>Admin SubCommands:</bold> <newline> <green>[] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <red>() <gray>opcional <newline> '
+  help koth header: '<#cd2727><bold>Ayuda Koth: <gray>(%page%/%pages%)'
+  help kothlist header: '<#cd2727><bold>Lista de koths: <gray>(%amount%)'
+  help kothlist format: '<white> - <click:run_command:"/ukoth view %name%"><hover:show_text:''<green>Click para ver''><aqua>%name% <gray>- <white>Estado: <aqua>%status%</hover></click>'
+  separer: <gradient:#cd2727:#d15f21>-------------------------------------
+  koth null: Sin info
+  koth wand name: <gradient:#cd2727:#d15f21><bold>Herramienta</bold></gradient> <gold><bold>KOTH</bold>
+  koth wand lore:
+  - ' '
+  - ' <yellow>Esta herramienta se usa para'
+  - ' <yellow>marcas las posiciones 1 y 2'
+  - ' <yellow>para crear la region de captura'
+  - ' '
+  - ' <aqua>CLICK-IZQUIERDO <gray>marca posicion <aqua>#1'
+  - ' <aqua>CLICK-DERECHO <gray>marca posicion<aqua>#2'
+  koth keywand name: <gradient:#cd2727:#d15f21><bold>LLAVE</bold></gradient> <red><bold>KOTH</bold>
+  koth keywand lore:
+  - ' '
+  - <yellow>Esta herramienta se usa para
+  - <yellow>añadir cofres de recompensa o
+  - <yellow>tambien usar en ya establecidos
+  - <yellow>para eliminarlos de la lista
+  koth keyitem name: <gradient:#cd2727:#d15f21><bold>LLAVE KOTH %ukoth_name%</bold></gradient>
+  koth keyitem lore:
+  - ' '
+  - <yellow>Usa esta llave par abrir
+  - <yellow>cofre de botin KOTH
+  koth keyitem notfound: '%tag% <red>Necesitas una llave para abrir este cofre de botin koth'
+  koth keyitem use: '%tag% <green>¡Has usado tu llave koth!'
+  koth hand empty: '%tag% <red>Debes tener un objeto en la mano para añadirlo'
+  region marked point: '%tag% <yellow>Punto <aqua>#%point_number% <yellow>se anoto en <aqua>%location%'
+  koth already exists: '%tag% <red>Ya existe un koth con este nombre'
+  koth marks empty: '%tag% <red>Faltan las marcas de ubicacion, usa la herramienta de <#d15f21>/ukoth wand'
+  koth does not exists: '%tag% <red>No hay ningún koth con este nombre, lista en <#d15f21>/ukoth list'
+  koth command id size: '%tag% <red>Este Koth no contiene comandos guardados'
+  koth command id error: '%tag% <red>Este comando no existe en este koth'
+  koth loot save success: '%tag% <green>El botin para el koth ha sido guardado con exito'
+  koth loot save success gui: <green>Botin guardado con exito
+  koth loot save error: '%tag% <red>Hubo un error, intenta luego'
+  koth loot save error gui: <red>Error al guardar el botin
+  koth command delete success: '%tag% <green>El comando del koth ha sido eliminado con éxito'
+  koth command delete success gui: <green>Removido correctamente
+  koth command delete error: '%tag% <red>Hubo un error al eliminar el comando del koth'
+  koth command delete error gui: <red>Ocurrio un error
+  koth command add success: '%tag% <green>¡El comando koth ha sido añadido con exito!'
+  koth command add success gui: <green>Añadido correctamente
+  koth command add error: '%tag% <red>Hubo un error al añadir el comando koth'
+  koth command add error gui: <red>Ocurrio un error
+  koth scheduler delete success: '%tag% <green>El programador ha sido eliminado'
+  koth scheduler delete success gui: <green>Removido correctamente
+  koth scheduler delete error: '%tag% <red>Ocurrio un error'
+  koth scheduler delete error gui: <red>Ocurrio un error
+  koth scheduler add success: '%tag% <green>¡El programador koth ha sido añadido con exito!'
+  koth scheduler add success gui: <green>Añadido con exito
+  koth scheduler add error: '%tag% <red>Se ha producido un error al añadir el programador koth'
+  koth scheduler add error gui: <red>Error al añadir el programador
+  koth delete success: '%tag% <green>El koth fue eliminado con éxito'
+  koth delete success gui: <green>Koth eliminado con exito
+  koth delete error: '%tag% <red>Hubo un error al borrar el koth'
+  koth delete error gui: <red>Error al borrar el Koth
+  koth key change success: '%tag% <green>El sistema de llaves se ha activado con exito'
+  koth key change success gui: <green>Valor cambiado
+  koth key change error: '%tag% <red>Se ha producido un error al activar el sistema de llaves'
+  koth key change error gui: <red>Error al cambiar valor
+  koth loottype change success: '%tag% <green>El sistema de tipo de botin ha sido habilitado con exito'
+  koth loottype change success gui: <green>Tipo de botin activado con exito
+  koth loottype change error: '%tag% <red>Se ha producido un error al activar el sistema de tipo de botin'
+  koth loottype change error gui: <red>Error al activar el tipo de botin
+  koth key get success: '%tag% <green>Has recibido la herramienta'
+  koth key get success gui: <green>Has recibido la herramienta
+  koth key get error: '%tag% <red>Hubo un error al generar la herramienta para este koth'
+  koth key get error gui: <red>¡Error al generar la clave!
+  koth key remove error: '%tag% <red>Ha ocurrido un error al intentar esto'
+  koth key remove error gui: <red>Error al eliminar el bloque
+  koth key remove success: '%tag% <green>Este bloque ha sido eliminado como botin de llave'
+  koth key remove success gui: <green>Bloque removido
+  koth key create error: '%tag% <red>Hubo un error al añadir este bloque como botin de llave'
+  koth key create success: '%tag% <green>Bloque añadido como botin de llave'
+  koth key teleport success: '%tag% <green>Has sido teletransportado al botin de llave'
+  koth key teleport error: '%tag% <red>Hubo un error al teletransportarse al bloque de botin'
+  koth keyblock noloots: '%tag% <red>Esta llave de botin no es valida o ya no existe'
+  koth keyblock noallowed: '%tag% <red>Este bloque no esta en la lista de bloqueos permitidos para el bloque Loot'
+  koth key change limit: '%tag% <red>El limite maximo de llaves es de 64 elementos'
+  koth key change limit gui: <red>El limite es de 64
+  koth key change minimum: '%tag% <red>El valor minimo de las llaves es de 1 elemento.'
+  koth key change minimum gui: <red>El minimo es 1
+  koth proximity change success: '%tag% <green>El sistema de proximidad se ha activado con exito'
+  koth proximity change success gui: <green>Valor cambiado
+  koth proximity change error: '%tag% <red>Se ha producido un error al conmutar el sistema de proximidad'
+  koth proximity change error gui: <red>Error al cambiar
+  koth proximity change limit: '%tag% <red>El limite maximo de proximidad es de 64 bloques'
+  koth proximity change limit gui: <red>El limite es de 64
+  koth proximity change minimum: '%tag% <red>El valor minimo de la proximidad es de 1 manzana'
+  koth proximity change minimum gui: <red>El lavor minimo es 1
+  koth capture change success gui: <green>Valor cambiado
+  koth capture change error gui: <red>Error al cambiar
+  koth capture change minimum: '%tag% <red>El valor minimo para la captura es de 1 segundo'
+  koth capture change minimum gui: <red>El valor minimo es 1
+  koth icon save success: '%tag% <green>Nuevo icono de koth guardado con exito'
+  koth icon save success gui: <green>Icono guardado con exito
+  koth icon save error: '%tag% <red>Hubo un error al guardar el nuevo articulo'
+  koth icon save error gui: <red>Error al guardar el nuevo elemento
+  koth event start success: '%tag% <green>El evento de Koth comenzo con exito'
+  koth event start success gui: <green>Evento iniciado con exito
+  koth event start error: '%tag% <red>Hubo un error al iniciar el evento de koth'
+  koth event start error gui: <red>El error inicia el evento
+  koth event stop success: '%tag% <green>El evento de koth ha finalizado con exito'
+  koth event stop success gui: <green>Evento finalizado con exito
+  koth event stop error: '%tag% <red>Hubo un error al terminar el evento de koth'
+  koth event stop error gui: <red>Error al finalizar el evento
+  koth event already started: '%tag% <red>Este evento ya esta ocurriendo ahora mismo'
+  koth event already stoped: '%tag% <red>Este evento no se ha iniciado'
+  koth event teleport success: '%tag% <green>Has sido teletransportado a la ubicacion del koth'
+  koth event teleport error: '%tag% <red>Se ha producido un error al teletransportarse al koth'
+  koth player no group: <red>Sin grupo
+  koth action already running: '%tag% <red>Ya hay una accion en curso, utiliza <#d15f21>/koth cancel <red>para cancelar accion anterior'
+  koth scheduler format daily: '<green>Hora: {hour}:{minute}'
+  koth scheduler format weekly: '<green> {week_day} <gray>| <green>Hora: {hour}:{minute}'
+  koth scheduler format monthly: '<green> Dia: {month_day} <gray>| <green>Hora: {hour}:{minute}'
+  koth scheduler frequency error: '%tag% <red>La frecuencia debe ser <aqua>DAILY<red>, <aqua>WEEKLY <red>o <aqua>MONTHLY'
+  koth scheduler weekday error: '%tag% <red>El dia de la semana debe ser <aqua>MONDAY<red>, <aqua>TUESDAY<red>, <aqua>WEDNESDAY<red>, <aqua>THURSDAY<red>, <aqua>FRIDAY<red>, <aqua>SATURDAY <red>o <aqua>SUNDAY'
+  koth scheduler monthday error: '%tag% <red>El dia del mes debe ser numerico entre <aqua>1 <red>y<aqua>31'
+  koth scheduler hour error: '%tag% <red>La hora debe estar en formato de 24 horas (00:00) utilizando por ejemplo <aqua>08:00 <red>o <aqua>21:35'
+  koth scheduler num error: '%tag% <red>No hay ningun programador con este numero. utiliza <#d15f21>/ukoth scheduler list <nombre> <red>para la lista'
+  koth maxtime change success: '%tag% <green>El sistema Maxtime ha sido activado con exito'
+  koth maxtime change success gui: <green>Valor cambiado
+  koth maxtime change error: '%tag% <red>Se ha producido un error al conmutar el sistema Maxtime'
+  koth maxtime change error gui: <red>Error al cambiar
+  koth maxtime change minimum: '%tag% <red>El valor minimo para la captura es de 1 segundo'
+  koth maxtime change minimum gui: <red>El valor minimo es 1
+  koth endaction change success: <green>La accion de finalizacion ha sido modificada con exito
+  koth endaction change success gui: <green>Cambiado con exito
+  koth endaction change error: <red>Se ha producido un error al cambiar la accion final
+  koth endaction change error gui: <red>Error al cambiar
+  koth endaction not found: '%tag% <red>Este tipo de accion no existe'
+  koth bordercolor change success: <green>El color del borde ha sido cambiado con exito
+  koth bordercolor change success gui: <green>Cambio de color
+  koth bordercolor change error: <red>Hubo un error al cambiar el color del borde
+  koth bordercolor change error gui: <red>Error al cambiar
+  koth bordercolor not found: '%tag% <red>Este color no existe, utiliza <dark_red>RED<red>, <green>GREEN <red>o <blue>BLUE'
+  koth control noplayer: <red>Ninguno
+  koth dir forward: Adelante
+  koth dir backward: Detras
+  koth dir left: Izquierda
+  koth dir right: Derecha
+  koth dir arrived: Llegaste
+  koth holo already exists: '%tag% <red>Ya existe un holograma con este nombre'
+  koth holo no exists: '%tag% <red>No hay ningun holograma con este nombre'
+  koth holo type no exists: '%tag% <red>Este tipo no existe, utiliza: {list}'
+  help hololist header: '<#cd2727><bold>Listado de todos los hologramas: <gray>(%amount%)'
+  help hololist format: '<white> - <click:run_command:"/ukoth hologram tp {id}"><hover:show_text:''<green>Click para TP''><aqua>{id} <gray>- <white>Tipo: <aqua>{type} <gray>(MaxLines: {maxlines})</hover></click>'
+  koth hologram top header: <red><bold>Top Koth {type}</bold> <green><bold>{time}
+  koth hologram top footer: <green>Mas usa <red>/koth stats
+  koth hologram top format topplayer: '<aqua>{num} <gray>| <white>Jugador: <green>{data} <gray>| <white>Victorias: <green>{wins}'
+  koth hologram top format topgroup: '<aqua>{num} <gray>| <white>Grupo: <green>{data} <gray>| <white>Victorias: <green>{wins}'
+  koth topgroup: Grupos
+  koth topplayer: Jugadores
+  koth single topgroup: Grupo
+  koth single topplayer: Jugador
+  koth all: Siempre
+  koth daily: Hoy
+  koth weekly: Esta semana
+  koth monthly: Este mes
+  koth yearly: Este año
+  koth hologram teleport success: '%tag% <green>Has sido teletransportado al holograma'
+  koth hologram teleport error: '%tag% <red>Hubo un error al teletransportarse al holograma'
+  koth hologram remove error: '%tag% <red>Se ha producido un error al eliminar este holograma'
+  koth hologram remove error gui: <red>Error al eliminar el holo
+  koth hologram remove success: '%tag% <green>Este holograma ha sido borrado'
+  koth hologram remove success gui: <green>El Holo ha sido eliminado
+  koth hologram create error: '%tag% <red>Se ha producido un error al crear este holograma'
+  koth hologram create error gui: <red>Error al crear el holo
+  koth hologram create success: '%tag% <green>Este holograma ha sido creado'
+  koth hologram create success gui: <green>Se ha creado Holo
+  stats no exists: '%tag% <red>Este estado no existe, compruebe el tipo o el valor'
+  stats no exists gui: <red>El estado no existe
+  koth stats remove error: '%tag% <red>Se ha producido un error al eliminar esta estadistica'
+  koth stats remove error gui: <red>Error al eliminar las estadisticas
+  koth stats remove success: '%tag% <green>Esta estadistica ha sido eliminada'
+  koth stats remove success gui: <green>Se han eliminado las estadisticas
+  koth stats create error: '%tag% <red>Se ha producido un error al crear esta estadistica'
+  koth stats create error gui: <red>Error al crear las estadisticas
+  koth stats create success: '%tag% <green>Se ha creado esta estadistica'
+  koth stats create success gui: <green>Se han creado estadisticas
+  koth create success: '%tag% <green>El nuevo Koth ha sido creado con exito'
+  koth create success gui: <green>Creado con exito
+  koth create error: '%tag% <red>Hubo un error al crear el nuevo Koth'
+  koth create error gui: <red>Error al crear el nuevo Koth
+  koth no upcoming events: <red>No hay proximos eventos
+  koth event now: <green>Esta activo ahora mismo
+  koth view header: <newline><#cd2727><bold>Informacion del koth <aqua>%ukoth_name%
+  koth view list:
+  - <#cd2727><bold>|</bold> <gradient:#cd2727:#d15f21>Info:</gradient>
+  - ' <white>Nombre: <aqua>%ukoth_name%'
+  - ' <white>Estado: <aqua>%ukoth_status%'
+  - ' <white>Captura: <aqua>%ukoth_capture_time%'
+  - ' <white>Proximidad: <aqua>%ukoth_proximity_enabled% <gray>(%ukoth_proximity_size%)'
+  - ' <white>Programacion: <aqua>%ukoth_scheduler_amount%'
+  - <#cd2727><bold>|</bold> <gradient:#cd2727:#d15f21>Rewards:</gradient>
+  - ' <white>Comandos: <aqua>%ukoth_commands_amount%'
+  - ' <white>Botin: <aqua>%ukoth_loot_type% <gray>(%ukoth_loots_amount%)'
+  - <#cd2727><bold>|</bold> <gradient:#cd2727:#d15f21>Maxtime:</gradient>
+  - ' <white>Tiempo: <aqua>%ukoth_maxtime_size% <gray>(%ukoth_maxtime_enabled%)'
+  - ' <white>Finalizacion: <aqua>%ukoth_maxtime_endaction% (%ukoth_maxtime_endaction_bordercolor%)'
+  - <#cd2727><bold>|</bold> <gradient:#cd2727:#d15f21>Local:</gradient>
+  - ' <white>Mundo: <aqua>%ukoth_world% <gray>(%ukoth_coord_x%, %ukoth_coord_y%, %ukoth_coord_z%)'
+  - ' <white>Area: <aqua>%ukoth_cuboid_area%'
+  koth commands header: '<newline><#cd2727><bold>Lista de comandos <aqua>%ukoth_name%: <gray>(%ukoth_commands_amount%)'
+  koth commands format: ' <green>{num} <gray>- <aqua>{cmd}'
+  koth loots header: '<newline><#cd2727><bold>Lista de botin de <aqua>%ukoth_name%: <gray>(%ukoth_loots_amount%)'
+  koth loots header sub: ' <gray>Tipo: <green>%ukoth_loot_type% <gray>| Llaves: <green>%ukoth_keyreceive_amount% <newline>'
+  koth loots format: ' <gray>- <white>Slot: <aqua>{slot} <gray>- <aqua>{type} <gray>- <white>Cantidad: <aqua>{amount}'
+  koth keys header: '<newline><#cd2727><bold>Lista de botin de bloques:'
+  koth keys header sub: ' <gray>Habilitado: <green>%ukoth_usekey%<newline>'
+  koth keys format: '<click:run_command:"/ukoth keys blocktp {id}"><hover:show_text:''<green>Click para TP''><green>{num} <gray>- <white>Mundo: <aqua>{world} <gray>- <white>Ubicacion: <aqua>{x}, {y}, {z}</hover></click>'
+  koth keys no exists: '%tag% <red>Ningun botin de llave con esta id, usa <#d15f21>/ukoth keys list <red>para ver todas'
+  koth scheduler header: '<newline><#cd2727><bold>Lista de programadores de <aqua>%ukoth_name%: <gray>(%ukoth_scheduler_amount%)'
+  koth scheduler list format daily: ' <gray>- <green>{num} <gray>| <white>Frequencia: <aqua>{frequency} <gray>| <white>Hora: <aqua>{hour}:{minute}'
+  koth scheduler list format weekly: ' <gray>- <green>{num} <gray>| <white>Frequencia: <aqua>{frequency} <gray>| <aqua> {week_day} <gray>| <white>Hora: <aqua>{hour}:{minute}'
+  koth scheduler list format monthly: ' <gray>- <green>{num} <gray>| <white>Frequencia: <aqua>{frequency} <gray>| <white> Dia: <aqua>{month_day} <gray>| <white>Hora: <aqua>{hour}:{minute}'
+  koth player stats header: <newline><#cd2727><bold>Estadisticas de jugador
+  koth player stats topplayer format: ' <gray>Individual<newline> <gray>- <white>Jugador: <aqua>{player} <gray>| <white>Victorias: <aqua>{wins}'
+  koth player stats topgroup format: ' <gray>Con grupo<newline> <gray>- <white>Nombre: <aqua>{group} <gray>| <white>Victorias: <aqua>{wins}'
+  koth events all header: '<newline><#cd2727><bold>Todos los eventos programados:'
+  koth events next header: '<newline><#cd2727><bold>Proximos koths:'
+  koth events no next: ' <red>- No hay eventos proximos ni programados'
+  koth extension not exist: '%tag% <red>Esta extension no existe en la lista oficial, consulte la lista en <#cd2727>/ukoth ext all'
+  koth extension not enabled: '%tag% <red>Esta extension aun no ha sido descargada, ver todo en <#cd2727>/ukoth ext list'
+  koth extension already enabled: '%tag% <red>Esta extensión ya esta descargada, puede comprobar si hay actualizaciones utilizando <#cd2727>/ukoth ext update <name>'
+  koth extension header: '<newline><#cd2727><bold>Lista de extensiones descargadas:'
+  koth extension format: '<click:run_command:"/ukoth extension view {id}"><hover:show_text:''<green>Click para ver''><green>{num} <gray>- <white>Nombre: <aqua>{name} <gray>- <white>Estado: <aqua>{state}</hover></click>'
+  koth extension all header: '<newline><#cd2727><bold>All extensions list:'
+  koth extension all format: '<click:run_command:"/ukoth extension view {id}"><hover:show_text:''<green>Click para ver''><green>{num} <gray>- <white>Nombre: <aqua>{name} <gray>- <white>Estado: <aqua>{downloaded} <gray>({state})</hover></click>'
+  koth extension view header: '<newline><#cd2727><bold>Informacion sobre la extension:'
+  koth extension view format:
+  - <newline><#cd2727><bold>|</bold> <gradient:#cd2727:#d15f21>Info:</gradient>
+  - ' <white>Nombre: <aqua>{name}'
+  - ' <white>Estado: <aqua>{status}'
+  - ' <white>Autor: <aqua>{author}'
+  - ' <white>Version: <aqua>{version}'
+  - ' <white>Desc: <aqua>{description}'
+  - ''
+  koth extension state true: <green>Activado
+  koth extension state false: <red>Desactivado
+  koth extension downloaded true: <green>Descargado
+  koth extension downloaded false: <red>Sin descargar
+  koth extension event already exists: '%tag% <red>La extension ya ha sido descargada anteriormente, puede intentar actualizarla'
+  koth extension event already updated: '%tag% <red>La extension ya está actualizada'
+  koth extension event error download: '%tag% <red>No puedo descargar la extension, intentalo de nuevo'
+  koth extension event error repo: '%tag% <red>Ha habido un error, parece que no se ha encontrado el repositorio'
+  koth extension event general error: '%tag% <red>Hubo un error al descargar la extension, por favor inténtelo de nuevo'
+  koth extension event need reload addons: '%tag% <red>La extension necesita ser actualizada, actualice usando <#cd2727>/ukoth ext reload'
+  koth extension event success download: '%tag% <green>La extensión se descargo con exito, actualice las extensiones utilizando <#cd2727>/ukoth ext reload'
+  koth extension download started: '%tag% <green>Proceso de descarga iniciado, espera...'
+  koth extension download started gui: <green>Descarga iniciada, espera...
+  koth extension all: <red>Todos
+  koth extension instaled: <green>Instalado
+  koth extension reload wait gui: <green>Esperando...
+  koth extension reloaded gui: <green>Recargado (%time%)
+ 
+# TRANSLATIONS OF GUI MENU FILES
+ 
+GUI:
+  General admin_koth_loot title: <#cd2727>Botin de koth <gray>| <aqua>%ukoth_name%
+  General admin_koth_loot items fill name: ' '
+  General admin_koth_loot items fill lore: [
+    ]
+  General admin_koth_loot items save name: <green>Guardar
+  General admin_koth_loot items save lore:
+  - ' '
+  - <yellow>Click para guardar
+  General admin_koth_loot items info name: <green>Informacion de botin
+  General admin_koth_loot items info lore:
+  - ' '
+  - <yellow>El botin sera entregado al
+  - <yellow>jugador que logre capturar
+  - <yellow>el koth. Para añadir items
+  - <yellow>arrastralos al menu y para
+  - <yellow>removerlos arrastralos fuera
+  General admin_koth_loot items type name: <green>Configuracion de botin
+  General admin_koth_loot items type lore:
+  - ' '
+  - ' <white>Tipo: <aqua>%ukoth_loot_type%'
+  - ''
+  - ' <yellow>Click para editar'
+  General admin_koth_loot items back name: <red>Volver
+  General admin_koth_loot items back lore:
+  - ' '
+  - <yellow>Volver sin guardar
+  General admin_koth_loot items prev name: <green>Anterior
+  General admin_koth_loot items prev lore:
+  - ' '
+  - <yellow>Click para regresar
+  General admin_koth_loot items next name: <green>Siguiente
+  General admin_koth_loot items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_commands title: <#cd2727>Comandos koth <gray>| <aqua>%ukoth_name%
+  General admin_koth_commands items fill name: ' '
+  General admin_koth_commands items fill lore: [
+    ]
+  General admin_koth_commands items add name: <green>Agregar nuevo comando
+  General admin_koth_commands items add lore:
+  - ' '
+  General admin_koth_commands items current name: '<green>Num: {num}'
+  General admin_koth_commands items current lore:
+  - ' '
+  - ' <white>Cmd: %ukoth_command:{num}%'
+  - ' '
+  - ' <yellow>Click izquierdo para ensayar'
+  - ' <red>Click derecho para eliminar'
+  General admin_koth_commands items prev name: <green>Anterior
+  General admin_koth_commands items prev lore:
+  - ' '
+  - <yellow>Click para regresar
+  General admin_koth_commands items next name: <green>Siguiente
+  General admin_koth_commands items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_commands items info name: <green>Informacion de comandos
+  General admin_koth_commands items info lore:
+  - ' '
+  - <yellow>Los comandos son ejecutados al
+  - <yellow>finalizar el koth y se pueden digitar
+  - <yellow>con o sin "/". Acepta variable <aqua>%player%
+  General admin_koth_commands items back name: <red>Volver
+  General admin_koth_commands items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_scheduler title: <#cd2727>Programacion <gray>| <aqua>%ukoth_name%
+  General admin_koth_scheduler items fill name: ' '
+  General admin_koth_scheduler items fill lore: [
+    ]
+  General admin_koth_scheduler items add name: <green>Crear nueva programacion
+  General admin_koth_scheduler items add lore:
+  - ' '
+  General admin_koth_scheduler items current name: '<green>Num: {num}'
+  General admin_koth_scheduler items current lore:
+  - ' '
+  - ' <white>Frecuencia: <green>%ukoth_scheduler:{num}:frequency%'
+  - ' <white>Scheduled: <green>%ukoth_scheduler:{num}%'
+  - ' '
+  - ' <red>Click derecho para eliminar'
+  General admin_koth_scheduler items prev name: <green>Anterior
+  General admin_koth_scheduler items prev lore:
+  - ' '
+  - <yellow>Click para regresar
+  General admin_koth_scheduler items next name: <green>Siguiente
+  General admin_koth_scheduler items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_scheduler items info name: <green>Informacion programaciones
+  General admin_koth_scheduler items info lore:
+  - ' '
+  - <yellow>Las programaciones inician
+  - <yellow>automaticamente sin necesidad
+  - <yellow>de un administrador, se puede
+  - <yellow>establecer en dias, semanas o meses
+  General admin_koth_scheduler items back name: <red>Volver
+  General admin_koth_scheduler items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_scheduler_create title: <#cd2727>Frecuencia <gray>| <aqua>%ukoth_name%
+  General admin_koth_scheduler_create items fill name: ' '
+  General admin_koth_scheduler_create items fill lore: [
+    ]
+  General admin_koth_scheduler_create items fill2 name: ' '
+  General admin_koth_scheduler_create items fill2 lore: [
+    ]
+  General admin_koth_scheduler_create items daily name: <green>EVENTO DIARIO
+  General admin_koth_scheduler_create items daily lore:
+  - ' '
+  - <yellow>Click para crear
+  General admin_koth_scheduler_create items weekly name: <green>EVENTO SEMANAL
+  General admin_koth_scheduler_create items weekly lore:
+  - ' '
+  - <yellow>Click para crear
+  General admin_koth_scheduler_create items monthly name: <green>EVENTO MENSUAL
+  General admin_koth_scheduler_create items monthly lore:
+  - ' '
+  - <yellow>Click para crear
+  General admin_koth_scheduler_create items back name: <red>Volver
+  General admin_koth_scheduler_create items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_scheduler_create_daily title: '<#cd2727>Tiempo: {current} {ampm} <gray>| <aqua>%ukoth_name%'
+  General admin_koth_scheduler_create_daily items fill name: ' '
+  General admin_koth_scheduler_create_daily items fill lore: [
+    ]
+  General admin_koth_scheduler_create_daily items fill2 name: ' '
+  General admin_koth_scheduler_create_daily items fill2 lore: [
+    ]
+  General admin_koth_scheduler_create_daily items hourcurrent name: <green>{hours} houra(s)
+  General admin_koth_scheduler_create_daily items hourcurrent lore:
+  - ' '
+  - <yellow>Utiliza los botones de abajo para cambiar
+  General admin_koth_scheduler_create_daily items minutecurrent name: <green>{minutes} minuto(s)
+  General admin_koth_scheduler_create_daily items minutecurrent lore:
+  - ' '
+  - <yellow>Usa los botones de abajo para cambiar
+  General admin_koth_scheduler_create_daily items houradd name: <green>+1 Hora
+  General admin_koth_scheduler_create_daily items houradd lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items hourremove name: <red>-1 Hora
+  General admin_koth_scheduler_create_daily items hourremove lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items houradd2 name: <green>+6 Horas
+  General admin_koth_scheduler_create_daily items houradd2 lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items hourremove2 name: <red>-6 Horas
+  General admin_koth_scheduler_create_daily items hourremove2 lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items minuteadd name: <green>+1 Minuto
+  General admin_koth_scheduler_create_daily items minuteadd lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items minuteremove name: <red>-1 Minuto
+  General admin_koth_scheduler_create_daily items minuteremove lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items minuteadd2 name: <green>+6 Minutos
+  General admin_koth_scheduler_create_daily items minuteadd2 lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items minuteremove2 name: <red>-6 Minutos
+  General admin_koth_scheduler_create_daily items minuteremove2 lore:
+  - ' '
+  General admin_koth_scheduler_create_daily items save name: <green>Guardar y crear
+  General admin_koth_scheduler_create_daily items save lore:
+  - ' '
+  - '{scheduler_formated}'
+  - <yellow>Click para guardar y crear
+  General admin_koth_scheduler_create_daily items back name: <red>Volver
+  General admin_koth_scheduler_create_daily items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_scheduler_create_weekly title: <#cd2727>Dias de la semana <gray>| <aqua>%ukoth_name%
+  General admin_koth_scheduler_create_weekly items fill name: ' '
+  General admin_koth_scheduler_create_weekly items fill lore: [
+    ]
+  General admin_koth_scheduler_create_weekly items fill2 name: ' '
+  General admin_koth_scheduler_create_weekly items fill2 lore: [
+    ]
+  General admin_koth_scheduler_create_weekly items current name: <green>{day_of_week}
+  General admin_koth_scheduler_create_weekly items current lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  - <yellow>y elegir la hora
+  General admin_koth_scheduler_create_weekly items back name: <red>Volver
+  General admin_koth_scheduler_create_weekly items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_scheduler_create_monthly title: <#cd2727>Dias del mes <gray>| <aqua>%ukoth_name%
+  General admin_koth_scheduler_create_monthly items fill name: ' '
+  General admin_koth_scheduler_create_monthly items fill lore: [
+    ]
+  General admin_koth_scheduler_create_monthly items fill2 name: ' '
+  General admin_koth_scheduler_create_monthly items fill2 lore: [
+    ]
+  General admin_koth_scheduler_create_monthly items current name: <green>Dia {day_of_month}
+  General admin_koth_scheduler_create_monthly items current lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  - <yellow>y elegir la hora
+  General admin_koth_scheduler_create_monthly items back name: <red>Volver
+  General admin_koth_scheduler_create_monthly items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_command_delete_confirm title: <red>Confirma la eliminacion?
+  General admin_koth_command_delete_confirm items fill name: ' '
+  General admin_koth_command_delete_confirm items fill lore: [
+    ]
+  General admin_koth_command_delete_confirm items confirm name: <green>Si, eliminar
+  General admin_koth_command_delete_confirm items confirm lore:
+  - ' '
+  - <yellow>Click para confirmar
+  General admin_koth_command_delete_confirm items back name: <red>Cancelar
+  General admin_koth_command_delete_confirm items back lore:
+  - ' '
+  - <yellow>Click para cancelar
+  General admin_koth_scheduler_delete_confirm title: <red>Confirma eliminar el programador?
+  General admin_koth_scheduler_delete_confirm items fill name: ' '
+  General admin_koth_scheduler_delete_confirm items fill lore: [
+    ]
+  General admin_koth_scheduler_delete_confirm items confirm name: <green>Si, eliminar
+  General admin_koth_scheduler_delete_confirm items confirm lore:
+  - ' '
+  - <yellow>Click para confirmar
+  General admin_koth_scheduler_delete_confirm items back name: <red>Cancelar
+  General admin_koth_scheduler_delete_confirm items back lore:
+  - ' '
+  - <yellow>Click para cancelar
+  General admin_koth_view title: <#cd2727>Koth <aqua>%ukoth_name%
+  General admin_koth_view items fill name: ' '
+  General admin_koth_view items fill lore: [
+    ]
+  General admin_koth_view items fill2 name: ' '
+  General admin_koth_view items fill2 lore: [
+    ]
+  General admin_koth_view items fill3 name: ' '
+  General admin_koth_view items fill3 lore: [
+    ]
+  General admin_koth_view items fill4 name: ' '
+  General admin_koth_view items fill4 lore: [
+    ]
+  General admin_koth_view items info name: '<yellow>Informacion del koth:'
+  General admin_koth_view items info lore:
+  - ' '
+  - ' <white>Nombre: <aqua>%ukoth_name%'
+  - ' <white>Area: <aqua>%ukoth_cuboid_area%'
+  - ' <white>Comandos: <aqua>%ukoth_commands_amount%'
+  - ' <white>Botin: <aqua>%ukoth_loots_amount%'
+  General admin_koth_view items loots name: <green>Botin del koth
+  General admin_koth_view items loots lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_loots_amount%'
+  - ''
+  - ' <yellow>Click para abrir'
+  General admin_koth_view items commands name: <green>Comandos del koth
+  General admin_koth_view items commands lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_commands_amount%'
+  - ''
+  - ' <yellow>Click para abrir'
+  General admin_koth_view items scheduler name: <green>Programadores del koth
+  General admin_koth_view items scheduler lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_scheduler_amount%'
+  - ''
+  - <yellow>Click para abrir
+  General admin_koth_view items proximity name: <green>Alertas de proximidad
+  General admin_koth_view items proximity lore:
+  - ' '
+  - ' <white>Activado: <aqua>%ukoth_proximity_enabled%'
+  - ' <white>Bloques: <aqua>%ukoth_proximity_size%'
+  - ''
+  - ' <yellow>Click para abrir'
+  General admin_koth_view items capture name: <green>Tiempo de captura
+  General admin_koth_view items capture lore:
+  - ' '
+  - ' <white>Tiempo: <aqua>%ukoth_capture_time_formated%'
+  - ''
+  - ' <yellow>Click para abrir'
+  General admin_koth_view items max name: <green>Tiempo maximo de Koth
+  General admin_koth_view items max lore:
+  - ' '
+  - ' <white>Activado: <aqua>%ukoth_maxtime_enabled%'
+  - ' <white>Tiempo: <aqua>%ukoth_maxtime_size_formated%'
+  - ''
+  - ' <yellow>Click para abrir'
+  General admin_koth_view items delete name: <green>Eliminar koth
+  General admin_koth_view items delete lore:
+  - ' '
+  - <yellow>Click para eliminar
+  - ''
+  - <red>Esta accion necesita confirmacion
+  - <red>despues de eso no se puede deshacer
+  General admin_koth_view items start name: <green><bold>Iniciar KOTH
+  General admin_koth_view items start lore:
+  - ' '
+  - ' <white>Estado: <aqua>%ukoth_status%'
+  - ' '
+  - <yellow>Click para inciar evento
+  General admin_koth_view items stop name: <red><bold>Parar evento
+  General admin_koth_view items stop lore:
+  - ' '
+  - ' <white>Estado: <aqua>%ukoth_status%'
+  - ' '
+  - ' <yellow>Click para parar koth'
+  General admin_koth_view items tp name: <red><bold>Teletransportar al KOTH
+  General admin_koth_view items tp lore:
+  - ' '
+  - ' <yellow>Click para teletransportarte'
+  General admin_koth_view items icon name: <green>Icono KOTH
+  General admin_koth_view items icon lore:
+  - ' '
+  - ' <yellow>Click para editar'
+  General admin_koth_view items back name: <red>Volver
+  General admin_koth_view items back lore:
+  - ' '
+  - ' <yellow>Click para volver'
+  General admin_koth_delete_confirm title: <red>Confirmar eliminacion?
+  General admin_koth_delete_confirm items fill name: ' '
+  General admin_koth_delete_confirm items fill lore: [
+    ]
+  General admin_koth_delete_confirm items confirm name: <green>SI, ELIMINAR
+  General admin_koth_delete_confirm items confirm lore:
+  - ' '
+  - <yellow>Click para confirmar
+  General admin_koth_delete_confirm items back name: <red>CANCELAR
+  General admin_koth_delete_confirm items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_home title: <#cd2727>Koth Admin <dark_gray>| Menu
+  General admin_koth_home items fill name: ' '
+  General admin_koth_home items fill lore: [
+    ]
+  General admin_koth_home items fill2 name: ' '
+  General admin_koth_home items fill2 lore: [
+    ]
+  General admin_koth_home items create name: <green>Creacion de KOTH
+  General admin_koth_home items create lore:
+  - ' '
+  - <yellow>Click para iniciar
+  General admin_koth_home items list name: <green>Lista de koths
+  General admin_koth_home items list lore:
+  - ' '
+  - <yellow>Click para abrir.
+  General admin_koth_home items blocks name: <green>Botin de bloques
+  General admin_koth_home items blocks lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_home items timezone name: <green>Zona horaria
+  General admin_koth_home items timezone lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_home items hologram name: <green>Hologramas
+  General admin_koth_home items hologram lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_home items extensions name: <green>Extensiones
+  General admin_koth_home items extensions lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_home items stats name: <green>Estadisticas
+  General admin_koth_home items stats lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_home items help name: <green>Ayuda UKOTH
+  General admin_koth_home items help lore:
+  - ' '
+  - <yellow>Click para ver comandos
+  General admin_koth_list title: <#cd2727>Lista de KOTHS
+  General admin_koth_list items fill name: ' '
+  General admin_koth_list items fill lore: [
+    ]
+  General admin_koth_list items current name: <green>%ukoth_name%
+  General admin_koth_list items current lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General admin_koth_list items prev name: <green>Anterior
+  General admin_koth_list items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_list items next name: <green>Siguiente
+  General admin_koth_list items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_list items back name: <red>Volver
+  General admin_koth_list items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_timezone title: <#cd2727>Koth Timezone <gray>| <red>{amount}
+  General admin_koth_timezone items fill name: ' '
+  General admin_koth_timezone items fill lore: [
+    ]
+  General admin_koth_timezone items current name: <green>{timezone}
+  General admin_koth_timezone items current lore:
+  - ' '
+  - ' <yellow>Click para seleccionar'
+  General admin_koth_timezone items using name: '<green>Actual: {current_timezone}'
+  General admin_koth_timezone items using lore:
+  - ' '
+  - <yellow>Esta es la zona horaria actual
+  - <yellow>en la que iniciaran los koths,
+  - <yellow>puedes seleccionar la que mas
+  - <yellow>se adapte a tu pais
+  General admin_koth_timezone items prev name: <green>Anterior
+  General admin_koth_timezone items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_timezone items next name: <green>Siguiente
+  General admin_koth_timezone items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_timezone items back name: <red>Volver
+  General admin_koth_timezone items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_hologram title: <#cd2727>Koth Hologramas <gray>
+  General admin_koth_hologram items fill name: ' '
+  General admin_koth_hologram items fill lore: [
+    ]
+  General admin_koth_hologram items current name: <green>{name}
+  General admin_koth_hologram items current lore:
+  - ' '
+  - ' <white>Mundo: <aqua>{world}'
+  - ' <white>Tipo: <aqua>{type}'
+  - ' <white>Tempo: <aqua>{time}'
+  - ''
+  - <yellow>Click izquierdo para TP
+  - <red>Click derecho para ELIMINAR
+  General admin_koth_hologram items create name: <green>Crear nuevo holograma (Nombre random)
+  General admin_koth_hologram items create lore:
+  - ' '
+  - <yellow>Click para iniciar
+  General admin_koth_hologram items prev name: <green>Anterior
+  General admin_koth_hologram items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_hologram items next name: <green>Siguiente
+  General admin_koth_hologram items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_hologram items back name: <red>Volver
+  General admin_koth_hologram items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_hologram_creator_type title: <#cd2727>Seleccionar tipo de holograma
+  General admin_koth_hologram_creator_type items fill name: ' '
+  General admin_koth_hologram_creator_type items fill lore: [
+    ]
+  General admin_koth_hologram_creator_type items fill2 name: ' '
+  General admin_koth_hologram_creator_type items fill2 lore: [
+    ]
+  General admin_koth_hologram_creator_type items player name: <green>JUGADOR
+  General admin_koth_hologram_creator_type items player lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_hologram_creator_type items group name: <green>GRUPO
+  General admin_koth_hologram_creator_type items group lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_hologram_creator_type items back name: <red>Volver
+  General admin_koth_hologram_creator_type items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_hologram_creator_time title: <#cd2727>Selecciona tiempo
+  General admin_koth_hologram_creator_time items fill name: ' '
+  General admin_koth_hologram_creator_time items fill lore: [
+    ]
+  General admin_koth_hologram_creator_time items fill2 name: ' '
+  General admin_koth_hologram_creator_time items fill2 lore: [
+    ]
+  General admin_koth_hologram_creator_time items current name: <green>{time}.
+  General admin_koth_hologram_creator_time items current lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_hologram_creator_time items back name: <red>Volver
+  General admin_koth_hologram_creator_time items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_stats_selector title: <#cd2727>Seleccion tipo de estado
+  General admin_koth_stats_selector items fill name: ' '
+  General admin_koth_stats_selector items fill lore: [
+    ]
+  General admin_koth_stats_selector items fill2 name: ' '
+  General admin_koth_stats_selector items fill2 lore: [
+    ]
+  General admin_koth_stats_selector items player name: <green>Jugador
+  General admin_koth_stats_selector items player lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_stats_selector items group name: <green>Grupo
+  General admin_koth_stats_selector items group lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_stats_selector items back name: <red>Volver
+  General admin_koth_stats_selector items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_stats_list title: <#cd2727>Estado Koth <gray>| {type} <dark_gray>({time})
+  General admin_koth_stats_list items fill name: ' '
+  General admin_koth_stats_list items fill lore: [
+    ]
+  General admin_koth_stats_list items current name: <green>{data}
+  General admin_koth_stats_list items current lore:
+  - ' '
+  - ' <white>Tipo: <aqua>{type}'
+  - ' <white>Victorias: <aqua>{amount}'
+  - ''
+  - <red>Click derecho para remover
+  General admin_koth_stats_list items addplayer name: <green>Añadir stats a usuario
+  General admin_koth_stats_list items addplayer lore:
+  - ' '
+  - <yellow>Click para seleccionar
+  General admin_koth_stats_list items prev name: <green>Anterior
+  General admin_koth_stats_list items prev lore:
+  - ' '
+  - <yellow>Click para regresar
+  General admin_koth_stats_list items next name: <green>Siguiente
+  General admin_koth_stats_list items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_stats_list items back name: <red>Volver
+  General admin_koth_stats_list items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_send_icon title: <#cd2727>Iconos koths <gray>| <aqua>%ukoth_name%
+  General admin_koth_send_icon items fill name: ' '
+  General admin_koth_send_icon items fill lore: [
+    ]
+  General admin_koth_send_icon items fill2 name: ' '
+  General admin_koth_send_icon items fill2 lore: [
+    ]
+  General admin_koth_send_icon items fill3 name: ' <blue>Coloque el item aqui'
+  General admin_koth_send_icon items fill3 lore: [
+    ]
+  General admin_koth_send_icon items current name: ''
+  General admin_koth_send_icon items current lore: [
+    ]
+  General admin_koth_send_icon items save name: <green>Guardar icono
+  General admin_koth_send_icon items save lore:
+  - ' '
+  - <yellow>Click para guardar
+  General admin_koth_send_icon items back name: <red>Cancelar y volver
+  General admin_koth_send_icon items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_lootblock title: <#cd2727>Bloques de botin KOTH
+  General admin_koth_lootblock items fill name: ' '
+  General admin_koth_lootblock items fill lore: [
+    ]
+  General admin_koth_lootblock items enabled name: <green>Habilitar llave
+  General admin_koth_lootblock items enabled lore:
+  - ' '
+  - ' <white>Estado: <aqua>%ukoth_usekey%'
+  - ' '
+  - <yellow>Click para alternar
+  General admin_koth_lootblock items keywand name: <green>Herramienta de llave
+  General admin_koth_lootblock items keywand lore:
+  - ' '
+  - <yellow>Utilizar para establecer bloques/cofres
+  - <yellow>que se utilizaran para recoger las recompensas'
+  General admin_koth_lootblock items current name: '<green>Numero: {num}'
+  General admin_koth_lootblock items current lore:
+  - ' '
+  - ' <white>Mundo: <aqua>{world}'
+  - ''
+  - <yellow>Click izquierdo para TP
+  - <red>Click derecho para eliminar
+  General admin_koth_lootblock items next name: <green>Siguiente
+  General admin_koth_lootblock items next lore:
+  - ' '
+  - ' <yellow>Click para avanzar'
+  General admin_koth_lootblock items prev name: <green>Regresar
+  General admin_koth_lootblock items prev lore:
+  - ' '
+  - ' <yellow>Click para volver'
+  General admin_koth_lootblock items back name: <red>Cancelar y volver
+  General admin_koth_lootblock items back lore:
+  - ' '
+  - <yellow>Click para volver
+  General player_koth_home title: <red>Koth <dark_gray>| Home
+  General player_koth_home items fill name: ' '
+  General player_koth_home items fill lore: [
+    ]
+  General player_koth_home items fill2 name: ' '
+  General player_koth_home items fill2 lore: [
+    ]
+  General player_koth_home items stats name: <green>Tus estadisticas
+  General player_koth_home items stats lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_home items events name: <green>Programaciones de Koths
+  General player_koth_home items events lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_home items commands name: <green>Ayuda de comandos
+  General player_koth_home items commands lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_loot title: <#cd2727>Botin del Koth <gray>| <aqua>%ukoth_name%
+  General player_koth_loot items fill name: ' '
+  General player_koth_loot items fill lore: [
+    ]
+  General player_koth_loot items info name: <green>Sobre los botines
+  General player_koth_loot items info lore:
+  - ' '
+  - <yellow>Puedes recoger los articulos
+  - <yellow>que prefieras en esta página,
+  - <yellow> los artículos que no son
+  - <yellow> recogidas serán descartadas.
+  - ''
+  - <red><bold>Atencion:</bold> Cuando se cierra
+  - <red>esta pagina ¡ya no se puede abrir!
+  General player_koth_stats title: <#cd2727>Estadisticas <gray>| <dark_gray>%ukoth_player%
+  General player_koth_stats items fill name: ' '
+  General player_koth_stats items fill lore: [
+    ]
+  General player_koth_stats items fill2 name: ' '
+  General player_koth_stats items fill2 lore: [
+    ]
+  General player_koth_stats items player name: <green>Estadistica individual
+  General player_koth_stats items player lore:
+  - ' '
+  - ' <white>Tú: <aqua>{player}'
+  - ' <white>Victorias: <aqua>{wins}'
+  General player_koth_stats items group name: <green>Estadistica de grupo
+  General player_koth_stats items group lore:
+  - ' '
+  - ' <white>Grupo actual: <aqua>{group}'
+  - ' <white>Victorias: <aqua>{wins}'
+  General player_koth_stats items detail name: <green>Estadisticas detalladas
+  General player_koth_stats items detail lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_stats items back name: <red>Volver
+  General player_koth_stats items back lore:
+  - ' '
+  - <red>Click para volver
+  General player_koth_stats_detail title: <#cd2727>Detalles <gray>| <dark_gray>%ukoth_player%
+  General player_koth_stats_detail items fill name: ' '
+  General player_koth_stats_detail items fill lore: [
+    ]
+  General player_koth_stats_detail items prev name: <green>Regresar
+  General player_koth_stats_detail items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General player_koth_stats_detail items next name: <green>Siguiente
+  General player_koth_stats_detail items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General player_koth_stats_detail items current name: <green>Victorias de {type}
+  General player_koth_stats_detail items current lore:
+  - ' '
+  - ' <white>Tipo: <aqua>{type}'
+  - ' <white>Victoria: <aqua>{data}'
+  - ' <white>Fecha: <aqua>{date}'
+  - ' <white>Koth: <aqua>{name}'
+  General player_koth_stats_detail items back name: <red>Volver
+  General player_koth_stats_detail items back lore:
+  - ' '
+  - <red>Click para volver
+  General player_koth_events title: <#cd2727>Programaciones
+  General player_koth_events items fill name: ' '
+  General player_koth_events items fill lore: [
+    ]
+  General player_koth_events items fill2 name: ' '
+  General player_koth_events items fill2 lore: [
+    ]
+  General player_koth_events items next name: <green>Programaciones proximas
+  General player_koth_events items next lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_events items all name: <green>Todas las programaciones
+  General player_koth_events items all lore:
+  - ' '
+  - ' <yellow>Click para abrir'
+  General player_koth_events items back name: <red>Volver
+  General player_koth_events items back lore:
+  - ' '
+  - <red>Click para volver
+  General player_koth_events_next title: <#cd2727>Programaciones <dark_gray>| Proximas
+  General player_koth_events_next items fill name: ' '
+  General player_koth_events_next items fill lore: [
+    ]
+  General player_koth_events_next items prev name: <green>Anterior
+  General player_koth_events_next items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General player_koth_events_next items next name: <green>Siguiente
+  General player_koth_events_next items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General player_koth_events_next items current name: <green>{name}
+  General player_koth_events_next items current lore:
+  - ' '
+  - ' <white>Koth: <aqua>{name}'
+  - ' <white>Frecuencia: <aqua>{type}'
+  - ' <white>Dia: <aqua>{day}'
+  - ' <white>Hora: <aqua>{hour}'
+  General player_koth_events_next items back name: <red>Volver
+  General player_koth_events_next items back lore:
+  - ' '
+  - <red>Click para volver
+  General player_koth_events_all title: <#cd2727>Programaciones <dark_gray>| Todas
+  General player_koth_events_all items fill name: ' '
+  General player_koth_events_all items fill lore: [
+    ]
+  General player_koth_events_all items prev name: <green>Anterior
+  General player_koth_events_all items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General player_koth_events_all items next name: <green>Siguiente
+  General player_koth_events_all items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General player_koth_events_all items current name: <green>{name}
+  General player_koth_events_all items current lore:
+  - ' '
+  - ' <white>Koth: <aqua>{name}'
+  - ' <white>Frecuencia: <aqua>{type}'
+  - ' <white>Dia: <aqua>{day}'
+  - ' <white>Hora: <aqua>{hour}'
+  General player_koth_events_all items back name: <red>Volver
+  General player_koth_events_all items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_loottype_edit title: '<#cd2727>Tipo de botin: <aqua>%ukoth_loot_type% <gray>| <aqua>%ukoth_name%'
+  General admin_koth_loottype_edit items fill name: ' '
+  General admin_koth_loottype_edit items fill lore: [
+    ]
+  General admin_koth_loottype_edit items fill2 name: ' '
+  General admin_koth_loottype_edit items fill2 lore: [
+    ]
+  General admin_koth_loottype_edit items current name: <green>Cantidad de llaves <aqua>(%ukoth_keyreceive_amount%)
+  General admin_koth_loottype_edit items current lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_keyreceive_amount%'
+  - ' '
+  - <yellow>Esta sera la cantidad de llaves
+  - <yellow>que sera entregadas al ganador
+  - <yellow>Utiliza los botones para cambiar
+  General admin_koth_loottype_edit items add name: <aqua><bold>+1
+  General admin_koth_loottype_edit items add lore:
+  - ' '
+  General admin_koth_loottype_edit items remove name: <red><bold>-1
+  General admin_koth_loottype_edit items remove lore:
+  - ' '
+  General admin_koth_loottype_edit items inv name: <green>Cambiar el tipo de botin
+  General admin_koth_loottype_edit items inv lore:
+  - ' '
+  - ' <white>Actual: <aqua>%ukoth_loot_type%'
+  - ' '
+  - ' <red><bold>INVENTARIO:</bold>'
+  - ''
+  - <yellow>Se le añadiran al usuario la recompensa
+  - <yellow>directamente al inventario, si este se
+  - <yellow>llena, caera al suelo
+  - ''
+  - <yellow>Click para alternar
+  General admin_koth_loottype_edit items key name: <green>Cambiar tipo de botin
+  General admin_koth_loottype_edit items key lore:
+  - ' '
+  - ' <white>Actual: <aqua>%ukoth_loot_type%'
+  - ' <white>Cantidad: <aqua>%ukoth_keyreceive_amount%'
+  - ' '
+  - ' <red><bold>LLAVE:</bold>'
+  - ''
+  - <yellow>Se le añadira al usuario recompensa de
+  - <yellow>llave/s con las que podrá abrir crates
+  - ''
+  - <yellow>Click para alternar
+  General admin_koth_loottype_edit items drop name: <green>Cambiar tipo de botin
+  General admin_koth_loottype_edit items drop lore:
+  - ' '
+  - ' <white>Current: <aqua>%ukoth_loot_type%'
+  - ' '
+  - <red><bold>DROP:</bold>
+  - ''
+  - <yellow>La recompensa caera al suelo pudiendo
+  - <yellow>cualquiera lograr agarrar objetos
+  - ''
+  - <yellow>Click para alternar
+  General admin_koth_loottype_edit items back name: <red>Volver
+  General admin_koth_loottype_edit items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_proximity_edit title: <#cd2727>Proximidad <gray>| <aqua>%ukoth_name%
+  General admin_koth_proximity_edit items fill name: ' '
+  General admin_koth_proximity_edit items fill lore: [
+    ]
+  General admin_koth_proximity_edit items fill2 name: ' '
+  General admin_koth_proximity_edit items fill2 lore: [
+    ]
+  General admin_koth_proximity_edit items current name: <green>Cantidad de bloques <aqua>(%ukoth_proximity_size%)
+  General admin_koth_proximity_edit items current lore:
+  - ' '
+  - ' <white>Bloques: <aqua>%ukoth_proximity_size%'
+  - ' '
+  - ' <yellow>Aumenta o disminuye el area que'
+  - <yellow>activara las alertas informativas
+  General admin_koth_proximity_edit items add name: <aqua><bold>+1
+  General admin_koth_proximity_edit items add lore:
+  - ' '
+  General admin_koth_proximity_edit items remove name: <red><bold>-1
+  General admin_koth_proximity_edit items remove lore:
+  - ' '
+  General admin_koth_proximity_edit items add2 name: <aqua><bold>+8
+  General admin_koth_proximity_edit items add2 lore:
+  - ' '
+  General admin_koth_proximity_edit items remove2 name: <red><bold>-8
+  General admin_koth_proximity_edit items remove2 lore:
+  - ' '
+  General admin_koth_proximity_edit items enabled name: <green>Activar las alertas de proximidad
+  General admin_koth_proximity_edit items enabled lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_proximity_size%'
+  - ' '
+  General admin_koth_proximity_edit items back name: <red>Volver
+  General admin_koth_proximity_edit items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_capture_edit title: <#cd2727>Config captura <gray>| <aqua>%ukoth_name%
+  General admin_koth_capture_edit items fill name: ' '
+  General admin_koth_capture_edit items fill lore: [
+    ]
+  General admin_koth_capture_edit items fill2 name: ' '
+  General admin_koth_capture_edit items fill2 lore: [
+    ]
+  General admin_koth_capture_edit items current name: <green>Segundos para capturar <aqua>(%ukoth_capture_time%)
+  General admin_koth_capture_edit items current lore:
+  - ' '
+  - ' <white>Segundos: <aqua>%ukoth_capture_time%'
+  - ' <white>Tiempo: <aqua>%ukoth_capture_time_formated%'
+  - ' '
+  General admin_koth_capture_edit items add name: <aqua><bold>+5s
+  General admin_koth_capture_edit items add lore:
+  - ' '
+  General admin_koth_capture_edit items remove name: <red><bold>-5s
+  General admin_koth_capture_edit items remove lore:
+  - ' '
+  General admin_koth_capture_edit items add2 name: <aqua><bold>+10s
+  General admin_koth_capture_edit items add2 lore:
+  - ' '
+  General admin_koth_capture_edit items remove2 name: <red><bold>-10s
+  General admin_koth_capture_edit items remove2 lore:
+  - ' '
+  General admin_koth_capture_edit items back name: <red>Volver
+  General admin_koth_capture_edit items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_max_edit title: <#cd2727>Config Maxtime <gray>| <aqua>%ukoth_name%
+  General admin_koth_max_edit items fill name: ' '
+  General admin_koth_max_edit items fill lore: [
+    ]
+  General admin_koth_max_edit items fill2 name: ' '
+  General admin_koth_max_edit items fill2 lore: [
+    ]
+  General admin_koth_max_edit items current name: <green>Segundos maximos <aqua>(%ukoth_maxtime_size%)
+  General admin_koth_max_edit items current lore:
+  - ' '
+  - ' <white>Segundos: <aqua>%ukoth_maxtime_size%'
+  - ' <white>Tiempo: <aqua>%ukoth_maxtime_size_formated%'
+  - ' '
+  General admin_koth_max_edit items enabled name: <green>Alternar el tiempo maximo
+  General admin_koth_max_edit items enabled lore:
+  - ' '
+  - ' <white>Cantidad: <aqua>%ukoth_maxtime_size%'
+  - ' '
+  General admin_koth_max_edit items endaction name: <green>Accion de finalizacion
+  General admin_koth_max_edit items endaction lore:
+  - ' '
+  - ' <white>Actual: <aqua>%ukoth_maxtime_endaction%'
+  - ' '
+  - ' <yellow>Click para alternar'
+  General admin_koth_max_edit items add name: <aqua><bold>+5s
+  General admin_koth_max_edit items add lore:
+  - ' '
+  General admin_koth_max_edit items remove name: <red><bold>-5s
+  General admin_koth_max_edit items remove lore:
+  - ' '
+  General admin_koth_max_edit items add2 name: <aqua><bold>+30s
+  General admin_koth_max_edit items add2 lore:
+  - ' '
+  General admin_koth_max_edit items remove2 name: <red><bold>-30s
+  General admin_koth_max_edit items remove2 lore:
+  - ' '
+  General admin_koth_max_edit items back name: <red>Volver
+  General admin_koth_max_edit items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_max_endtime title: <#cd2727>Config EndTime <gray>| <aqua>%ukoth_name%
+  General admin_koth_max_endtime items fill name: ' '
+  General admin_koth_max_endtime items fill lore: [
+    ]
+  General admin_koth_max_endtime items fill2 name: ' '
+  General admin_koth_max_endtime items fill2 lore: [
+    ]
+  General admin_koth_max_endtime items end name: <green>Accion de finalizacion
+  General admin_koth_max_endtime items end lore:
+  - ' '
+  - ' <white>Actual: <aqua>%ukoth_maxtime_endaction%'
+  - ''
+  - ' <yellow>Click para alternar'
+  General admin_koth_max_endtime items createborder name: <green>Accion de finalizacion
+  General admin_koth_max_endtime items createborder lore:
+  - ' '
+  - ' <white>Actual: <aqua>%ukoth_maxtime_endaction%'
+  - ' <white>Color: <aqua>%ukoth_maxtime_endaction_bordercolor%'
+  - ''
+  - ' <yellow>Click para alternar'
+  - ''
+  General admin_koth_max_endtime items red name: <red>Rojo
+  General admin_koth_max_endtime items red lore:
+  - ' '
+  - ' <yellow>Click para elegir'
+  General admin_koth_max_endtime items green name: <green>Verde
+  General admin_koth_max_endtime items green lore:
+  - ' '
+  - ' <yellow>Click para elegir'
+  General admin_koth_max_endtime items blue name: <blue>Azul
+  General admin_koth_max_endtime items blue lore:
+  - ' '
+  - ' <yellow>Click para elegir'
+  General admin_koth_max_endtime items back name: <red>Volver
+  General admin_koth_max_endtime items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_extension title: <#cd2727>Configuracion extensiones
+  General admin_koth_extension items fill name: ' '
+  General admin_koth_extension items fill lore: [
+    ]
+  General admin_koth_extension items fill2 name: ' '
+  General admin_koth_extension items fill2 lore: [
+    ]
+  General admin_koth_extension items all name: <green>Todas las extensiones
+  General admin_koth_extension items all lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_extension items instaled name: <green>Extensiones instaladas
+  General admin_koth_extension items instaled lore:
+  - ' '
+  - <yellow>Click para abrir
+  General admin_koth_extension items reload name: <green>Recargar extensiones
+  General admin_koth_extension items reload lore:
+  - ' '
+  - <yellow>Click para recargar
+  General admin_koth_extension items back name: <red>Volver
+  General admin_koth_extension items back lore:
+  - ' '
+  - <red>Click para volver
+  General admin_koth_extension_list title: <#cd2727>Extensiones <gray>| <aqua>{type}
+  General admin_koth_extension_list items fill name: ' '
+  General admin_koth_extension_list items fill lore: [
+    ]
+  General admin_koth_extension_list items current_all name: <green>{name}
+  General admin_koth_extension_list items current_all lore:
+  - ' '
+  - ' <white>Nombre: <aqua>{name}'
+  - ' <white>Estado: <aqua>{state}'
+  - ' <white>Descargado: <aqua>{downloaded}'
+  - ''
+  - <yellow>Click para descargar
+  General admin_koth_extension_list items current_instaled name: <green>{name}
+  General admin_koth_extension_list items current_instaled lore:
+  - ' '
+  - ' <white>Nombre: <aqua>{name}'
+  - ' <white>Estado: <aqua>{status}'
+  - ' <white>Autor: <aqua>{author}'
+  - ' <white>Version: <aqua>{version}'
+  - ' <white>Descripcion: <aqua>{description}'
+  - ''
+  - <yellow>Click para activar
+  General admin_koth_extension_list items prev name: <green>Anterior
+  General admin_koth_extension_list items prev lore:
+  - ' '
+  - <yellow>Click para volver
+  General admin_koth_extension_list items next name: <green>Siguiente
+  General admin_koth_extension_list items next lore:
+  - ' '
+  - <yellow>Click para avanzar
+  General admin_koth_extension_list items back name: <red>Volver
+  General admin_koth_extension_list items back lore:
+  - ' '
+  - <yellow>Click para volver
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  koth help show on_help: <click:run_command:"/koth help"><hover:show_text:'<green>Click para ver ayuda'> <#d15f21>/koth help <gray>-<yellow> Muestra el menu de ayuda</hover></click>
+  koth help show on_success: '%tag% <green>Estas viendo la ayuda'
+  koth help show on_error: '%tag%<red>Error al mostrar el texto'
+  koth help show on_usage: '%tag% <red>Usa <#d15f21>/koth help'
+  koth cancel show on_help: <click:run_command:"/koth cancel "><hover:show_text:'<green>Click para cancelar acciones pendientes'> <#d15f21>/koth cancel <gray>-<yellow> Cancela acciones pendientes</hover></click>
+  koth cancel show on_success: '%tag% <green>Accion cancelada'
+  koth cancel show on_error: '%tag% <red>Error'
+  koth cancel show on_usage: '%tag% <red>Usa <#d15f21>/koth cancel'
+  koth stats show on_help: <click:run_command:"/koth stats "><hover:show_text:'<green>Click para ver estadisticas'> <#d15f21>/koth stats <light_purple>(-gui) <gray>-<yellow> Ver tus estadisticas</hover></click>
+  koth stats show on_success: '%tag% <green>Correcto'
+  koth stats show on_error: '%tag% <red>Error'
+  koth stats show on_usage: '%tag% <red>Usa <#d15f21>/koth stats <light_purple>(-gui)'
+  koth events show on_help: <click:run_command:"/koth events "><hover:show_text:'<green>Click para ver programaciones'> <#d15f21>/koth events <light_purple>(-gui) <gray>-<yellow> Ver programaciones de koths</hover></click>
+  koth events show on_success: '%tag% <green>Correcto'
+  koth events show on_error: '%tag% <red>Error'
+  koth events show on_usage: '%tag% <red>Usa <#d15f21>/koth events <light_purple>(-gui)'
+  koth events subcommands next: <click:suggest_command:"/koth events next "><hover:show_text:'<green>Click para ver'> <#d15f21>/koth events next <gray>-<yellow> Ver proximas programaciones</hover></click>
+  koth events subcommands next show on_success: '%tag% <green>Correcto'
+  koth events subcommands next show on_error: '%tag% <red>Error'
+  koth events subcommands next show on_usage: '%tag% <red>Usa <#d15f21>/koth events next'
+  koth events subcommands all: <click:suggest_command:"/koth events all "><hover:show_text:'<green>Click para ver'> <#d15f21>/koth events all <gray>-<yellow> Ver todas las programaciones</hover></click>
+  koth events subcommands all show on_success: '%tag% <green>Correcto'
+  koth events subcommands all show on_error: '%tag% <red>Error'
+  koth events subcommands all show on_usage: '%tag% <red>Usa <#d15f21>/koth events all'
+  ukoth help show on_help: <click:run_command:"/ukoth help"><hover:show_text:'<green>Click para ver ayuda'> <#d15f21>/ukoth help <gray>-<yellow> Ver menu de ayuda</hover></click>
+  ukoth help show on_success: '%tag% <green>Estas viendo la ayuda'
+  ukoth help show on_error: '%tag%<red>Error al mostrar texto'
+  ukoth help show on_usage: '%tag% <red>Usa <#d15f21>/ukoth help'
+  ukoth reload show on_help: <click:run_command:"/ukoth reload"><hover:show_text:'<green>Click para recargar'> <#d15f21>/ukoth reload <gray>-<yellow> Recarga el plugin</hover></click>
+  ukoth reload show on_success: '%tag% <green>Plugin recargado correctamente <gray>(%time%).'
+  ukoth reload show on_error: '%tag% <red>Error al recargar el plugin'
+  ukoth reload show on_usage: '%tag% <red>Usa <#d15f21>/ukoth reload'
+  ukoth start show on_help: <click:suggest_command:"/ukoth start "><hover:show_text:'<green>Click para iniciar evento'> <#d15f21>/ukoth start <red><name> <gray>-<yellow> Iniciar un koth</hover></click>
+  ukoth start show on_success: '%tag% <green>El evento ha comenzado con exito'
+  ukoth start show on_error: '%tag% <red>Se ha producido un error al iniciar el evento'
+  ukoth start show on_usage: '%tag% <red>Usa <#d15f21>/ukoth start <red><name>'
+  ukoth tp show on_help: <click:suggest_command:"/ukoth tp "><hover:show_text:'<green>Click para TP'> <#d15f21>/ukoth tp <red><name> <gray>-<yellow> Teletransportarse al koth</hover></click>
+  ukoth tp show on_success: '%tag% <green>Has sido teletransportado a la ubicacion del koth'
+  ukoth tp show on_error: '%tag% <red>Se ha producido un error al teletransportarse al koth'
+  ukoth tp show on_usage: '%tag% <red>Usa <#d15f21>/ukoth tp <red><name>'
+  ukoth stop show on_help: <click:suggest_command:"/ukoth stop "><hover:show_text:'<green>Click para parar evento'> <#d15f21>/ukoth stop <red><name> <gray>-<yellow> Para koth en curso</hover></click>
+  ukoth stop show on_success: '%tag% <green>El evento se ha detenido con exito'
+  ukoth stop show on_error: '%tag% <red>Se ha producido un error al detener el evento'
+  ukoth stop show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stop <red><name>'
+  ukoth wand show on_help: <click:run_command:"/ukoth wand"><hover:show_text:'<green>Click para obtener herramienta'> <#d15f21>/ukoth wand <gray>-<yellow> Obtener herramienta</hover></click>
+  ukoth wand show on_success: '%tag% <green>Has recibido la herramienta de koth...'
+  ukoth wand show on_error: '%tag% <red>Error al intentar recibir la herramienta'
+  ukoth wand show on_usage: '%tag% <red>Usa <#d15f21>/ukoth wand'
+  ukoth create show on_help: <click:suggest_command:"/ukoth create "><hover:show_text:'<green>Click para crear un koth'> <#d15f21>/ukoth create <red><name> <gray>-<yellow> Crear un nuevo koth</hover></click>
+  ukoth create show on_success: '%tag% <green>Nuevo Koth creado con exito'
+  ukoth create show on_error: '%tag% <red>Error al crear un nuevo Koth'
+  ukoth create show on_usage: '%tag% <red>Usa <#d15f21>/ukoth create <red><name>'
+  ukoth move show on_help: <click:suggest_command:"/ukoth move "><hover:show_text:'<green>Click para mover koth'> <#d15f21>/ukoth move <red><name> <gray>-<yellow> Mover un koth</hover></click>
+  ukoth move show on_success: '%tag% <green>El comando fue trasladado con exito a la nueva ubicacion'
+  ukoth move show on_error: '%tag% <red>Hubo un error al mover el koth'
+  ukoth move show on_usage: '%tag% <red>Usa <#d15f21>/ukoth move <red><name>'
+  ukoth delete show on_help: <click:suggest_command:"/ukoth delete "><hover:show_text:'<green>Click para eliminar koth'> <#d15f21>/ukoth delete <red><name> <gray>-<yellow> Eliminar koth</hover></click>
+  ukoth delete show on_success: '%tag% <green>Koth eliminado con exito'
+  ukoth delete show on_error: '%tag% <red>Error al borrar Koth'
+  ukoth delete show on_usage: '%tag% <red>Usa <#d15f21>/ukoth delete <red><name>'
+  ukoth list show on_help: <click:suggest_command:"/ukoth list"><hover:show_text:'<green>Click para lista de koths'> <#d15f21>/ukoth list <light_purple>(-gui)<gray>-<yellow> Lista de koths</hover></click>
+  ukoth list show on_success: '%tag% <green>Exito'
+  ukoth list show on_error: '%tag% <red>Error en el listado de koths'
+  ukoth list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth list'
+  ukoth view show on_help: <click:suggest_command:"/ukoth view "><hover:show_text:'<green>Click para ver info de koth'> <#d15f21>/ukoth view <red><name> <light_purple>(-gui) <gray>-<yellow> Ver info de koth</hover></click>
+  ukoth view show on_success: '%tag% <green>Exito'
+  ukoth view show on_error: '%tag% <red>Error de visualizacion de koth'
+  ukoth view show on_usage: '%tag% <red>Usa <#d15f21>/ukoth view <red><name> <light_purple>(-gui)'
+  ukoth commands show on_help: <click:run_command:"/ukoth commands"><hover:show_text:'<green>Click para ver comandos'> <#d15f21>/ukoth commands <gray>-<yellow> Ver todos los comandos</hover></click> <hover:show_text:'<green> con subscmd'><green>[!]</hover>
+  ukoth commands show on_success: '%tag% <green>El comando fue eliminado con exito'
+  ukoth commands show on_error: '%tag% <red>Hubo un error al eliminar el comando'
+  ukoth commands show on_usage: '%tag% <red>Usa <#d15f21>/ukoth commands remove <red><name> <id>'
+  ukoth commands subcommands list: <click:suggest_command:"/ukoth commands list "><hover:show_text:'<green>Click para ver comandos'> <#d15f21>/ukoth commands list <red><name> <light_purple>(-gui) <gray>-<yellow> Lista de comandos</hover></click>
+  ukoth commands subcommands list show on_success: '%tag% <green>Exito'
+  ukoth commands subcommands list show on_error: '%tag% <red>Se ha producido un error al enumerar los comandos'
+  ukoth commands subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth commands list <red><name>'
+  ukoth commands subcommands add: <click:suggest_command:"/ukoth commands add "><hover:show_text:'<green>Click para añadir un comando al koth'> <#d15f21>/ukoth commands add <red><name> (cmd) <gray>-<yellow> Añadir comandos</hover></click>
+  ukoth commands subcommands add show on_success: '%tag% <green>El comando se ha añadido con exito'
+  ukoth commands subcommands add show on_error: '%tag% <red>Hubo un error al añadir el comando'
+  ukoth commands subcommands add show on_usage: '%tag% <red>Usa <#d15f21>/ukoth commands add <red><name> <cmd>'
+  ukoth commands subcommands remove: <click:suggest_command:"/ukoth commands remove "><hover:show_text:'<green>Click para remover comando del koth'> <#d15f21>/ukoth commands remove <red><name> <id> <gray>-<yellow> Remover un comando</hover></click>
+  ukoth loots show on_help: <click:run_command:"/ukoth loots"><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth loots <gray>-<yellow> Ver y editar botin</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth loots show on_success: '%tag% <green>El botin fue cambiado con exito'
+  ukoth loots show on_error: '%tag% <red>Hubo un error al cambiar el botin'
+  ukoth loots show on_usage: '%tag% <red>Usa <#d15f21>/ukoth loots'
+  ukoth loots subcommands list: <click:suggest_command:"/ukoth loots list "><hover:show_text:'<green>Click para ver botines'> <#d15f21>/ukoth loots list <red><name> <light_purple>(-gui) <gray>-<yellow> Lista de todos los botines</hover></click>
+  ukoth loots subcommands list show on_success: '%tag% <green>Exito'
+  ukoth loots subcommands list show on_error: '%tag% <red>Se ha producido un error al enumerar los comandos'
+  ukoth loots subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth loots list <red><name>'
+  ukoth loots subcommands add: <click:suggest_command:"/ukoth loots add "><hover:show_text:'<green>Click para añadir un botin'> <#d15f21>/ukoth loots add <red><name> <gray>-<yellow> Añade un botin a Koth</hover></click>
+  ukoth loots subcommands add show on_success: '%tag% <green>El comando se ha añadido con exito'
+  ukoth loots subcommands add show on_error: '%tag% <red>Hubo un error al añadir el comando'
+  ukoth loots subcommands add show on_usage: '%tag% <red>Usa <#d15f21>/ukoth loots add <red><name> <cmd>'
+  ukoth loots subcommands type: <click:suggest_command:"/ukoth loots type "><hover:show_text:'<green>Click el tipo de botin'> <#d15f21>/ukoth loots type <red><name> <type> (amount) <gray>-<yellow> Cambiar el tipo de botin</hover></click>
+  ukoth loots subcommands type show on_success: '%tag% <green>Se ha cambiado el tipo de botin'
+  ukoth loots subcommands type show on_error: '%tag% <red>Se ha producido un error al cambiar'
+  ukoth loots subcommands type show on_usage: '%tag% <red>Usa <#d15f21>/ukoth loots type <red><name> <type> (amount)'
+  ukoth keys show on_help: <click:run_command:"/ukoth keys "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth keys <gray>-<yellow> Teclas de visualización y edicion</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth keys show on_success: '%tag% <green>El botin fue cambiado con exito.'
+  ukoth keys show on_error: '%tag% <red>Hubo un error al cambiar las llaves'
+  ukoth keys show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys'
+  ukoth keys subcommands listblocks: <click:suggest_command:"/ukoth keys listblocks "><hover:show_text:'<green>Click para ver botines de llaves'> <#d15f21>/ukoth keys listblocks <light_purple>(-gui) <gray>-<yellow> Lista de los botin de llave</hover></click>
+  ukoth keys subcommands listblocks show on_success: '%tag% <green>Exito'
+  ukoth keys subcommands listblocks show on_error: '%tag% <red>Se ha producido un error al listar bloques de llaves'
+  ukoth keys subcommands listblocks show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys listblocks'
+  ukoth keys subcommands blocktp: <click:suggest_command:"/ukoth keys blocktp "><hover:show_text:'<green>Haga clic para ver todas las llaves'> <#d15f21>/ukoth keys blocktp <red><id> <gray>-<yellow> Teletransportarse al bloque</hover></click>
+  ukoth keys subcommands blocktp show on_success: '%tag% <green>Has sido teletransportado con exito'
+  ukoth keys subcommands blocktp show on_error: '%tag% <red>Se ha producido un error al teletransportarse al lugar'
+  ukoth keys subcommands blocktp show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys blocktp <red><id>'
+  ukoth keys subcommands toggle: <click:suggest_command:"/ukoth keys toggle "><hover:show_text:'<green>Click para alternar llave'> <#d15f21>/ukoth keys toggle <gray>-<yellow> Alternar las llaves</hover></click>
+  ukoth keys subcommands toggle show on_success: '%tag% <green>La llave fue cambiada con exito'
+  ukoth keys subcommands toggle show on_error: '%tag% <red>Hubo un error al cambiar la llave'
+  ukoth keys subcommands toggle show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys toggle'
+  ukoth keys subcommands wand: <click:suggest_command:"/ukoth keys wand "><hover:show_text:'<green>Click para dar herramienta'> <#d15f21>/ukoth keys wand <gray>-<yellow> Recibe herramienta de botin de llave</hover></click>
+  ukoth keys subcommands wand show on_success: '%tag% <green>Has recibido con exito la herramienta de llave'
+  ukoth keys subcommands wand show on_error: '%tag% <red>Error al recibir la herramienta de llave'
+  ukoth keys subcommands wand show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys wand'
+  ukoth keys subcommands give: <click:suggest_command:"/ukoth keys give "><hover:show_text:'<green>Click para recibir llave'> <#d15f21>/ukoth keys give <red><name> <player> (amount) <gray>-<yellow> Dar llave a un jugador</hover></click>
+  ukoth keys subcommands give show on_success: '%tag% <green>Has dado con exito la llave'
+  ukoth keys subcommands give show on_error: '%tag% <red>Error al recibir la llave'
+  ukoth keys subcommands give show on_usage: '%tag% <red>Usa <#d15f21>/ukoth keys give <red><name> <player> (amount)'
+  ukoth proximity show on_help: <click:run_command:"/ukoth proximity "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth proximity <gray>-<yellow> Ver y editar proximidad </hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth proximity show on_success: '%tag% <green>La proximidad fue cambiada con exito'
+  ukoth proximity show on_error: '%tag% <red>Hubo un error al cambiar la proximidad'
+  ukoth proximity show on_usage: '%tag% <red>Usa <#d15f21>/ukoth proximity'
+  ukoth proximity subcommands setsize: <click:suggest_command:"/ukoth proximity setsize "><hover:show_text:'<green>Click para cambiar'> <#d15f21>/ukoth proximity setsize <red><name> <amount> <gray>-<yellow> Establecer el tamaño de la proximidad</hover></click>
+  ukoth proximity subcommands setsize show on_success: '%tag% <green>El tamaño de la proximidad ha sido modificado con exito'
+  ukoth proximity subcommands setsize show on_error: '%tag% <red>Hubo un error al cambiar el tamaño de la proximidad'
+  ukoth proximity subcommands setsize show on_usage: '%tag% <red>Usa <#d15f21>/ukoth proximity setsize <red><name> <amount>'
+  ukoth proximity subcommands toggle: <click:suggest_command:"/ukoth proximity toggle "><hover:show_text:'<green>Click para cambiar proximidad'> <#d15f21>/ukoth proximity toggle <red><name> <gray>-<yellow> Alternar la proximidad</hover></click>
+  ukoth proximity subcommands toggle show on_success: '%tag% <green>La proximidad ha sido activada con exito'
+  ukoth proximity subcommands toggle show on_error: '%tag% <red>Hubo un error al alternar la proximidad'
+  ukoth proximity subcommands toggle show on_usage: '%tag% <red>Usa <#d15f21>/ukoth proximity toggle <red><name>'
+  ukoth scheduler show on_help: <click:suggest_command:"/ukoth scheduler "><hover:show_text:'<green>Click para editar el programador de koth'> <#d15f21>/ukoth scheduler <gray>-<yellow> Editar programador de koth</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth scheduler show on_success: '%tag% <green>Exito'
+  ukoth scheduler show on_error: '%tag% <red>Error'
+  ukoth scheduler show on_usage: '%tag% <red>Usa <#d15f21>/ukoth scheduler'
+  ukoth scheduler subcommands create: <click:suggest_command:"/ukoth scheduler create "><hover:show_text:'<green>Click para cambiar'> <#d15f21>/ukoth scheduler create <red><name> <type> <day> <hour:min> <gray>-<yellow> Crear nueva programacion</hover></click>
+  ukoth scheduler subcommands create show on_success: '%tag% <green>El nuevo programador koth ha sido creado con exito'
+  ukoth scheduler subcommands create show on_error: '%tag% <red>Se ha producido un error al crear el nuevo programador'
+  ukoth scheduler subcommands create show on_usage: '%tag% <red>Usa <#d15f21>/ukoth scheduler create <red><name> <type> <day> <hour:min>'
+  ukoth scheduler subcommands remove: <click:suggest_command:"/ukoth scheduler remove "><hover:show_text:'<green>Click para remover programacion'> <#d15f21>/ukoth scheduler remove <red><name> <num><gray>-<yellow> Remueve la programacion</hover></click>
+  ukoth scheduler subcommands remove show on_success: '%tag% <green>El programador ha sido eliminado con exito'
+  ukoth scheduler subcommands remove show on_error: '%tag% <red>Hubo un error al eliminar el programador'
+  ukoth scheduler subcommands remove show on_usage: '%tag% <red>Usa <#d15f21>/ukoth scheduler remove <red><name> <num>'
+  ukoth scheduler subcommands list: <click:suggest_command:"/ukoth scheduler list "><hover:show_text:'<green>Click para la lista de programaciones'> <#d15f21>/ukoth scheduler list <red><name> <light_purple>(-gui) <gray>-<yellow> Lista de programaciones</hover></click>
+  ukoth scheduler subcommands list show on_success: '%tag% <green>El programador ha sido listado con exito'
+  ukoth scheduler subcommands list show on_error: '%tag% <red>Hubo un error en la lista de programadores'
+  ukoth scheduler subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth scheduler list <red><name>'
+  ukoth seticon show on_help: <click:suggest_command:"/ukoth seticon "><hover:show_text:'<green>Click para cambiar el icono'> <#d15f21>/ukoth seticon <red><name> <gray>-<yellow> Cambiar icono</hover></click>
+  ukoth seticon show on_success: '%tag% <green>El icono de koth ha sido cambiado con exito'
+  ukoth seticon show on_error: '%tag% <red>Hubo un error al cambiar el icono de Koth'
+  ukoth seticon show on_usage: '%tag% <red>Usa <#d15f21>/ukoth seticon <red><name>'
+  ukoth setcapture show on_help: <click:suggest_command:"/ukoth setcapture "><hover:show_text:'<green>Click para cambiar tiempo de captura'> <#d15f21>/ukoth setcapture <red><name> <sec> <gray>-<yellow> Cambiar tiempo de captura</hover></click>
+  ukoth setcapture show on_success: '%tag% <green>El tiempo de captura de koth ha sido modificado con exito'
+  ukoth setcapture show on_error: '%tag% <red>Hubo un error al cambiar el tiempo de captura de koth'
+  ukoth setcapture show on_usage: '%tag% <red>Usa <#d15f21>/ukoth setcapture <red><name> <secs>'
+  ukoth maxtime show on_help: <click:run_command:"/ukoth maxtime "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth maxtime <gray>-<yellow> Ver y editar tiempo maximo</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth maxtime show on_success: '%tag% <green>El tiempo maximo fue cambiado con exito'
+  ukoth maxtime show on_error: '%tag% <red>Hubo un error al cambiar el tiempo maximo'
+  ukoth maxtime show on_usage: '%tag% <red>Usa <#d15f21>/ukoth maxtime'
+  ukoth maxtime subcommands setsize: <click:suggest_command:"/ukoth maxtime setsize "><hover:show_text:'<green>Click para cambiar'> <#d15f21>/ukoth maxtime setsize <red><name> <amount> <gray>-<yellow> Establecer tiempo maximo</hover></click>
+  ukoth maxtime subcommands setsize show on_success: '%tag% <green>Tiempo maximo modificado'
+  ukoth maxtime subcommands setsize show on_error: '%tag% <red>Error al cambiar tiempo maximo'
+  ukoth maxtime subcommands setsize show on_usage: '%tag% <red>Usa <#d15f21>/ukoth maxtime setsize <red><name> <amount>'
+  ukoth maxtime subcommands toggle: <click:suggest_command:"/ukoth maxtime toggle "><hover:show_text:'<green>Click para alternar tiempo maximo'> <#d15f21>/ukoth maxtime toggle <red><name> <gray>-<yellow> Alternar tiempo maximo</hover></click>
+  ukoth maxtime subcommands toggle show on_success: '%tag% <green>El tiempo maximo fue cambiado con exito'
+  ukoth maxtime subcommands toggle show on_error: '%tag% <red>Hubo un error al cambiar el tiempo maximo'
+  ukoth maxtime subcommands toggle show on_usage: '%tag% <red>Usa <#d15f21>/ukoth maxtime toggle <red><name>'
+  ukoth maxtime subcommands endaction: <click:suggest_command:"/ukoth maxtime endaction "><hover:show_text:'<green>Click para evento de finalizacion'> <#d15f21>/ukoth maxtime endaction <red><name> <ACTION> (color) <gray>-<yellow> Cambiar accion de finalizacion</hover></click>
+  ukoth maxtime subcommands endaction show on_success: '%tag% <green>La accion final ha sido modificada con exito'
+  ukoth maxtime subcommands endaction show on_error: '%tag% <red>Hubo un error al cambiar la accion final'
+  ukoth maxtime subcommands endaction show on_usage: '%tag% <red>Usa <#d15f21>/ukoth maxtime endaction <red><name> <ACTION> (color)'
+  ukoth hologram show on_help: <click:run_command:"/ukoth hologram "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth hologram <gray>-<yellow> Ver y editar holograma</hover></click> <hover:show_text:'<green>Con subcomando'><green>[!]</hover>
+  ukoth hologram show on_success: '%tag% <green>El holograma fue cambiado con exito'
+  ukoth hologram show on_error: '%tag% <red>Hubo un error al cambiar el holograma'
+  ukoth hologram show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram'
+  ukoth hologram subcommands create: <click:suggest_command:"/ukoth hologram create "><hover:show_text:'<green>Click para cambiar'> <#d15f21>/ukoth hologram create <red><name> <type> <time> (maxlines) <gray>-<yellow> Crear holograma</hover></click>
+  ukoth hologram subcommands create show on_success: '%tag% <green>El nuevo holograma fue creado con exito'
+  ukoth hologram subcommands create show on_error: '%tag% <red>Hubo un error al crear el holograma'
+  ukoth hologram subcommands create show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram create <red><name> <type> <time> (maxlines)'
+  ukoth hologram subcommands delete: <click:suggest_command:"/ukoth hologram delete "><hover:show_text:'<green>Click para eliminar holograma'> <#d15f21>/ukoth hologram delete <red><name> <gray>-<yellow> Eliminar un holograma</hover></click>
+  ukoth hologram subcommands delete show on_success: '%tag% <green>El holograma fue eliminado con exito'
+  ukoth hologram subcommands delete show on_error: '%tag% <red>Hubo un error al borrar el holograma'
+  ukoth hologram subcommands delete show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram delete <red><name>'
+  ukoth hologram subcommands list: <click:suggest_command:"/ukoth hologram list "><hover:show_text:'<green>Click para ver lista de comandos'> <#d15f21>/ukoth hologram list <light_purple>(-gui) <gray>-<yellow> Lista de todos los hologramas</hover></click>
+  ukoth hologram subcommands list show on_success: '%tag% <green>Exito'
+  ukoth hologram subcommands list show on_error: '%tag% <red>Hubo un error al mostrar la lista'
+  ukoth hologram subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram list <light_purple>(-gui)'
+  ukoth hologram subcommands tp: <click:suggest_command:"/ukoth hologram tp "><hover:show_text:'<green>Click para hacer tp al holo'> <#d15f21>/ukoth hologram tp <red><name> <gray>-<yellow> Teletransportar al holo</hover></click>
+  ukoth hologram subcommands tp show on_success: '%tag% <green>Has sido teletransportado con exito'
+  ukoth hologram subcommands tp show on_error: '%tag% <red>Hubo un error al teletransportarse al holograma'
+  ukoth hologram subcommands tp show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram tp <red><name>'
+  ukoth hologram subcommands movehere: <click:suggest_command:"/ukoth hologram movehere "><hover:show_text:'<green>Click para mover el holo aqui'> <#d15f21>/ukoth hologram movehere <red><name> <gray>-<yellow> Mover holograma a ti</hover></click>
+  ukoth hologram subcommands movehere show on_success: '%tag% <green>El holograma ha sido trasladado con exito a la nueva ubicacion'
+  ukoth hologram subcommands movehere show on_error: '%tag% <red>Se ha producido un error al mover el holograma'
+  ukoth hologram subcommands movehere show on_usage: '%tag% <red>Usa <#d15f21>/ukoth hologram movehere <red><name>'
+  ukoth stats show on_help: <click:run_command:"/ukoth stats "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth stats <gray>-<yellow> Ver y editar estadisticas</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth stats show on_success: '%tag% <green>Las estadisticas fueron cambiadas con exito'
+  ukoth stats show on_error: '%tag% <red>Hubo un error al cambiar las estadisticas'
+  ukoth stats show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stats'
+  ukoth stats subcommands clearall: <click:suggest_command:"/ukoth stats clearall "><hover:show_text:'<green>Click para borrar (cuidado)'> <#d15f21>/ukoth stats clearall <red><type> <gray>-<yellow> Borrar todas las estadisticas</hover></click>
+  ukoth stats subcommands clearall show on_success: '%tag% <green>Estado borrado con exito'
+  ukoth stats subcommands clearall show on_error: '%tag% <red>Hubo un error al borrar estadisticas'
+  ukoth stats subcommands clearall show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stats clearall <red><type>'
+  ukoth stats subcommands remove: <click:suggest_command:"/ukoth stats remove "><hover:show_text:'<green>Click para remover estadisticas'> <#d15f21>/ukoth stats remove <red><type> <value> <gray>-<yellow> Eliminar estadisticas de jugador o grupo</hover></click>
+  ukoth stats subcommands remove show on_success: '%tag% <green>Las estadisticas fueron eliminadas con exito'
+  ukoth stats subcommands remove show on_error: '%tag% <red>Hubo un error al eliminar las estadisticas'
+  ukoth stats subcommands remove show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stats remove <red><type> <value>'
+  ukoth stats subcommands add: <click:suggest_command:"/ukoth stats add "><hover:show_text:'<green>Click para añadir estadisticas'> <#d15f21>/ukoth stats add <red><player> <gray>-<yellow> Añadir estadisticas</hover></click>
+  ukoth stats subcommands add show on_success: '%tag% <green>Se ha añadido estadisticas al jugador'
+  ukoth stats subcommands add show on_error: '%tag% <red>Hubo un error al añadir estadisticas al jugador'
+  ukoth stats subcommands add show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stats add <red><player>'
+  ukoth stats subcommands list: <click:suggest_command:"/ukoth stats list "><hover:show_text:'<green>Click para ver estadisticas'> <#d15f21>/ukoth stats list <red><type> <light_purple>(-gui) <gray>-<yellow> Lista de todas las estadisticas</hover></click>
+  ukoth stats subcommands list show on_success: '%tag% <green>Listado efectuado'
+  ukoth stats subcommands list show on_error: '%tag% <red>Error al mostrar listado'
+  ukoth stats subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth stats list <red><type> <light_purple>(-gui)'
+  ukoth extension show on_help: <click:run_command:"/ukoth extension "><hover:show_text:'<green>Click para ver y editar'> <#d15f21>/ukoth extension <gray>-<yellow> Ver y editar extensiones</hover></click> <hover:show_text:'<green>Con subcomandos'><green>[!]</hover>
+  ukoth extension show on_success: '%tag% <green>La extension fue cambiada con exito'
+  ukoth extension show on_error: '%tag% <red>Hubo un error al cambiar la extension'
+  ukoth extension show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension'
+  ukoth extension subcommands download: <click:suggest_command:"/ukoth extension download "><hover:show_text:'<green>Click para cambiar'> <#d15f21>/ukoth extension download <red><name> <gray>-<yellow> Descarga la extension</hover></click>
+  ukoth extension subcommands download show on_success: '%tag% <green>Proceso de descarga iniciado, espera...'
+  ukoth extension subcommands download show on_error: '%tag% <red>Hubo un error al descargar la extension'
+  ukoth extension subcommands download show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension download <red><name>'
+  ukoth extension subcommands update: <click:suggest_command:"/ukoth extension update "><hover:show_text:'<green>Click para actualizar extension'> <#d15f21>/ukoth extension update <red><name> <gray>-<yellow> Actualizar extension</hover></click>
+  ukoth extension subcommands update show on_success: '%tag% <green>Proceso de actualización iniciado, espera...'
+  ukoth extension subcommands update show on_error: '%tag% <red>Hubo un error al actualizar la extension'
+  ukoth extension subcommands update show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension update <red><name>'
+  ukoth extension subcommands list: <click:suggest_command:"/ukoth extension list "><hover:show_text:'<green>Click para listar las extensiones instaladas'> <#d15f21>/ukoth extension list <light_purple>(-gui) <gray>-<yellow> Lista de extensiones instaladas</hover></click>
+  ukoth extension subcommands list show on_success: '%tag% <green>Listado efectuado'
+  ukoth extension subcommands list show on_error: '%tag% <red>Hubo un error al listar'
+  ukoth extension subcommands list show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension list <light_purple>(-gui)'
+  ukoth extension subcommands all: <click:suggest_command:"/ukoth extension all "><hover:show_text:'<green>Click para ver las extensiones'> <#d15f21>/ukoth extension all <light_purple>(-gui) <gray>-<yellow> Lista de extensiones disponibles</hover></click>
+  ukoth extension subcommands all show on_success: '%tag% <green>Extensiones listadas con exito'
+  ukoth extension subcommands all show on_error: '%tag% <red>Hubo un error al enumerar las extensiones'
+  ukoth extension subcommands all show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension all <light_purple>(-gui)'
+  ukoth extension subcommands reload: <click:suggest_command:"/ukoth extension reload "><hover:show_text:'<green>Click para recargar las extensiones'> <#d15f21>/ukoth extension reload <gray>-<yellow> Recargar extensiones</hover></click>
+  ukoth extension subcommands reload show on_success: '%tag% <green>Las extensiones se han recargado con exito <gray>(%time%)'
+  ukoth extension subcommands reload show on_error: '%tag% <red>Hubo un error al intentar recargar las extensiones'
+  ukoth extension subcommands reload show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension reload'
+  ukoth extension subcommands view: <click:suggest_command:"/ukoth extension view "><hover:show_text:'<green>Click para ver extension'> <#d15f21>/ukoth extension view <red><name> <gray>-<yellow> Ver extension</hover></click>
+  ukoth extension subcommands view show on_success: '%tag% <green>Exito'
+  ukoth extension subcommands view show on_error: '%tag% <red>Hubo un error al ver la extension'
+  ukoth extension subcommands view show on_usage: '%tag% <red>Usa <#d15f21>/ukoth extension view <red><name>'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  commandunknownplayer:
+    message:
+    - '%tag% <red>Comando desconocido <aqua><click:run_command:"/koth help"><hover:show_text:"<green>Click para ver la ayuda"><green><bold>[AYUDA]</bold></green></hover></click> <red>para ver la lista de comandos disponibles'
+    actionbar: <#d15f21>/koth help <red>Ver comandos disponibles
+    title:
+      line: <red>! <#d15f21>/koth help
+      subline: <yellow>Ver comandos
+    bossbar: <#d15f21>/koth help <red>ver comandos disponibles
+  commandunknownadmin:
+    message:
+    - '%tag% <red>Comando desconocido <aqua><click:run_command:"/koth help"><hover:show_text:"<green>Click para ver la ayuda"><green><bold>[AYUDA]</bold></green></hover></click> <red>para ver la lista de comandos disponibles'
+    actionbar: <#d15f21>/ukoth help <red>Ver comandos disponibles
+    title:
+      line: <red>! <#d15f21>/ukoth help
+      subline: <yellow>Ver comandos
+    bossbar: <#d15f21>/ukoth help <red>Ver comandos disponibles
+  addkothcommand:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Escribe en el chat el <aqua>Nuevo comando<yellow>.
+    - ' <gray>- Escribe <red>cancel</red> <gray>o <click:run_command:"/koth cancel"><hover:show_text:"<red>Click to cancel."><red>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>Escribe en el chat el nuevo comando.
+    title:
+      line: <red>! <yellow>Nuevo mando
+      subline: <yellow>Escribir en el chat
+    bossbar: <yellow>Escribe en el chat el nuevo comando. <red>({time})
+  sendkothinsideenter:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>-----------------------------------------<red><strikethrough>-
+    - <#cd2727>Has entrado en la zona del koth <aqua>%ukoth_name%<yellow>
+    - <red><strikethrough>-<gray><strikethrough>-----------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <#cd2727>Entraste al area de <aqua>%ukoth_name%
+    title:
+      line: <red>! <#cd2727>Koth Area
+      subline: <aqua>%ukoth_name%
+    bossbar: <#cd2727>Entraste al area del koth <aqua>%ukoth_name%
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <red><bold>Koth</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<red>En curso: <aqua>%ukoth_name%'
+    - ''
+    - <gradient:#cd2727:#d15f21>Tiempo maximo</gradient>
+    - ' <aqua>%ukoth_barmax_{amount}_length:30_remaining:<gray>|_progress:<red>|_complete:<red>|_fullbar:<red>Ending% <gray>%ukoth_maxtimeleft%'
+    - ''
+    - '<red>Controlando:'
+    - ' <white>Jugador: <aqua>%ukoth_control_player%'
+    - ' <white>Grupo: <aqua>%ukoth_control_group%'
+  sendkothoutsideenter:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <#cd2727>Has entrado en la zona del koth <aqua>%ukoth_name%<yellow>
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <#cd2727>Entraste al area del koth <aqua>%ukoth_name%
+    title:
+      line: <red>! <#cd2727>Koth Area
+      subline: <aqua>%ukoth_name%
+    bossbar: <#cd2727>Entraste al area del koth <aqua>%ukoth_name%
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><red><bold>Koth</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<red>En curso: <aqua>%ukoth_name%'
+    - ''
+    - <gradient:#cd2727:#d15f21>Tiempo maximo</gradient>
+    - ' <aqua>%ukoth_barmax_{amount}_length:30_remaining:<gray>|_progress:<red>|_complete:<red>|_fullbar:<red>Ending% <gray>%ukoth_maxtimeleft%'
+    - ''
+    - '<red>Coordenadas:'
+    - ' <white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z%'
+    - ' <white>Direccion: <aqua>%ukoth_direction_relative%'
+    - ''
+    - '<red>Controlando:'
+    - ' <white>Jugador: <aqua>%ukoth_control_player%'
+    - ' <white>Grupo: <aqua>%ukoth_control_group%'
+  sendkothcapture:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <#cd2727>Koth capturado por <aqua>%ukoth_control_player% <#cd2727>del grupo <gray>(%ukoth_control_group%)
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: '<#cd2727>Tiempo restante: <aqua>%ukoth_timeleft%<gray>| <#cd2727>Capturando: <aqua>%ukoth_control_player% <gray>(%ukoth_control_group%)'
+    title:
+      line: ''
+      subline: <aqua>%ukoth_timeleft%
+    bossbar: '<#cd2727>Tiempo restante: <aqua>%ukoth_timeleft%<gray>| <#cd2727>Capturando: <aqua>%ukoth_control_player% <gray>(%ukoth_control_group%)'
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <gold><bold>U</bold><red><bold>Koth</bold> <green><bold>CAPTURED!
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<red><bold>|</bold> <red>En curso:'
+    - ' <aqua>%ukoth_name%'
+    - ''
+    - '<red><bold>|</bold> <red>Tiempo de captura:'
+    - ' <aqua>%ukoth_barleft_{amount}_length:30_remaining:<gray>|_progress:<red>|_complete:<red>|_fullbar:<red>Ending% <gray>%ukoth_timeleft%'
+    - '<red><bold>|</bold> <red>Tiempo maximo:'
+    - ' <aqua>%ukoth_barmax_{amount}_length:30_remaining:<gray>|_progress:<red>|_complete:<red>|_fullbar:<red>Ending% <gray>%ukoth_maxtimeleft%'
+    - ' '
+    - '<red><bold>|</bold> <red>Controlando:'
+    - ' <white>Jugador: <aqua>%ukoth_control_player%'
+    - ' <white>Grupo: <aqua>%ukoth_control_group%'
+  sendkothstart:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>----------------------------------------<red><strikethrough>-
+    - ''
+    - <yellow>Ha iniciado el koth <red>%ukoth_name%
+    - '<yellow>Tiempo maximo: <aqua>%ukoth_maxtimeleft%'
+    - '<yellow>Coordenadas: <white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z%'
+    - ''
+    - <red><strikethrough>-<gray><strikethrough>----------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>Un nuevo koth ha iniciado
+    title:
+      line: <yellow>KOTH iniciado
+      subline: ''
+    bossbar: <yellow>KOTH iniciado, participa en <red>/warp koth
+  sendkothendwinner:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ''
+    - <yellow>El koth <red>%ukoth_name% <yellow>ha sido capturado
+    - '<yellow>Victorioso: <aqua>{winner_player} <gray>| <yellow>Grupo: <aqua>{winner_group}'
+    - ''
+    - <yellow>¡Felicidades!
+    - ''
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>El koth ha terminado, el ganador ha sido <aqua>{winner_player}
+    title:
+      line: <red>! <yellow>Koth finalizado
+      subline: '<yellow>Ganador: <aqua>{winner_player}'
+    bossbar: <yellow>El koth ha terminado, ganador <aqua>{winner_player}
+  sendkothendnowin:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>-----------------------------------------<red><strikethrough>-
+    - <yellow>KOTH TERMINADO
+    - <red>No ha habido ganadores
+    - <red><strikethrough>-<gray><strikethrough>-----------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>El koth ha terminado y no han habido ganadores
+    title:
+      line: <red>! <yellow>KOTH terminado
+      subline: <red><bold>Sin ganadores
+    bossbar: <yellow>El koth termino sin ganadores
+  addkothstats:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - <red><bold>!</bold> <yellow>Escribe en el chat <aqua><bold>NOMBRE DEL JUGADOR</bold><yellow> al que se añadirá stats
+    - ' <gray>- Escribe <red>cancel</red> <gray>o <click:run_command:"/koth cancel"><hover:show_text:"<red>Click para cancelar"><red>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>Escribe en el chat el nombre del jugador.
+    title:
+      line: <red>! <yellow>Nuevas estadisticas
+      subline: <yellow>Escribir en el chat
+    bossbar: <yellow>Escribe en el chat el nombre del jugador <red>({time})
+  sendkothcreate:
+    message:
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    - '<red><bold>!</bold> <yellow>Sigue los pasos para crear un nuevo Koth:'
+    - ' <gray><bold>-</bold> <yellow>Consigue la varita con <#d15f21>/ukoth wand'
+    - ' <gray><bold>-</bold> <yellow>Selecciona los dos puntos alto y bajo con la varita magica'
+    - ' <gray><bold>-</bold> <yellow>Escribe en el chat el <aqua><bold>Nombre para el koth</bold><yellow>.'
+    - ' <gray>- Escribe <red>cancel</red> <gray>o <click:run_command:"/koth cancel"><hover:show_text:"<red>Click para cancelar"><red>[CLICK AQUI]</red></hover></click> para cancelar'
+    - ' '
+    - <red><strikethrough>-<gray><strikethrough>---------------------------------------------<red><strikethrough>-
+    - ' '
+    actionbar: <yellow>Siga los pasos para crear
+    title:
+      line: <red>! <yellow>NUEVO KOTH
+      subline: <yellow>Siga los pasos
+    bossbar: <yellow>Siga los pasos para crear <red>({time})
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_title: <red><bold>Creador de KOTH</bold>
+    # Scoreboards for version 1.13 or lower do not support GRADIENT, HEX COLOR or RAINBOW
+    scoreboard_lines:
+    - ' '
+    - '<red><bold>|</bold> <red>Sigue los pasos:'
+    - ''
+    - ' <gray><bold>-</bold> <yellow>Obtenga el <red>/ukoth wand'
+    - ' <gray><bold>-</bold> <yellow>Selecciona los dos puntos'
+    - ' <gray><bold>-</bold> <yellow>Escribe en el chat el'
+    - <yellow> nuevo <aqua><bold>Nombre del koth</bold>
+    - ' '
+    - <green><bold>¡Y LISTO!
