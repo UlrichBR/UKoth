@@ -1650,8 +1650,8 @@ CHAT:
     actionbar: <yellow>Un nuevo koth ha iniciado
     title:
       line: <yellow>KOTH iniciado
-      subline: ''
-    bossbar: <yellow>KOTH iniciado, participa en <red>/warp koth
+      subline: '<white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z%'
+    bossbar: '<yellow>El evento King of the Hill ha comenzado en <white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z% <red>({time})'
   sendkothendwinner:
     message:
     - ' '
