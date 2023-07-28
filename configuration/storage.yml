@@ -1,0 +1,28 @@
+Storage:
+  # sqlite/mysql/yaml/h2
+  # For better performance it is recommended to use MYSQL as storage.
+  type: sqlite
+   
+  mysql:
+    # Only mysql
+    host: localhost
+    # Only mysql
+    port: 3306
+    # Only mysql
+    base: YOUR-BASE-PRE-CREATED
+    #SSL is only valid for MYSQL, most servers are not necessary to use it as true.
+    useSSL: false
+  # Used for Mysql mandatory and optional for H2 and Sqlite (default: root)
+   
+  user: root
+  # Used for Mysql mandatory and optional for H2 and Sqlite (default is empty)
+  pass: ''
+   
+  databases:
+    koth_table: ukoth-koth
+    lootblocks_table: ukoth-lootblocks
+    loots_table: ukoth-loots
+    scheduler_table: ukoth-schedulers
+    hologram_table: ukoth-holograms
+    stats_table: ukoth-stats
+    commands_table: ukoth-commands

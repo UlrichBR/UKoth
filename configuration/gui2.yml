@@ -1,0 +1,74 @@
+General:
+  admin_koth_loot_chance:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 5
+    items:
+      fill:
+        material: ORANGE_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - ALL
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      fill2:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 36
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      current:
+        clicksound: ''
+        material: HOPPER
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 13
+      add:
+        clicksound: ''
+        material: DIAMOND
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 20
+      remove:
+        clicksound: ''
+        material: REDSTONE
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 24
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 40

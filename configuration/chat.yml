@@ -1,0 +1,286 @@
+#
+#
+# Time: in seconds
+#
+# BossBar:
+# Colors: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+# Styles: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+# Flags: DARKEN_SCREEN, PLAY_BOSS_MUSIC, CREATE_WORLD_FOG
+#
+#
+# All texts are located in the language files and accept all placeholders from UClans.
+Chat:
+   
+  commandunknownplayer:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  commandunknownadmin:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  addkothcommand:
+    enabled: true
+    time: 60
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendkothinsideenter:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: false
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: false
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendkothoutsideenter:
+    enabled: true
+    time: 5
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: false
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: false
+    title:
+      enabled: false
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  sendkothcapture:
+    enabled: true
+    time: 0
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: false
+      center: true
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
+   
+  # For proximity type ALLWORLDS only.
+  sendkothcaptureall:
+    enabled: true
+    time: 10
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: false
+   
+  sendkothstart:
+    enabled: true
+    time: 10
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendkothendwinner:
+    enabled: true
+    time: 10
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendkothendnowin:
+    enabled: true
+    time: 10
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: YELLOW
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  addkothstats:
+    enabled: true
+    time: 60
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: false
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+   
+  sendkothcreate:
+    enabled: true
+    time: 120
+    sound:
+      enabled: true
+      display: ''
+    message:
+      enabled: true
+      center: true
+    bossbar:
+      enabled: true
+      color: RED
+      style: PROGRESS
+      flags: [
+        ]
+      animated: true
+      consumable: true
+    title:
+      enabled: true
+    actionbar:
+      enabled: true
+    scoreboard:
+      enabled: true
