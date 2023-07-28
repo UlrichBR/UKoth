@@ -1,0 +1,142 @@
+Plugin:
+  check_for_updates: true
+ 
+Config:
+  tag: <#e1b128><bold>U</bold><gradient:#cd2727:#d15f21><bold>Koth</bold></gradient> <gray>|
+   
+  gui:
+    # The gui menus work as of 1.8 but you can turn it off and just use text mode
+    enabled: true
+    # Permission to use gui
+    player_permission: ukoth.player.gui
+    # Permission to use gui
+    admin_permission: ukoth.admin.gui
+    # Open gui menu when commands have no arguments
+    open_gui_noargs: true
+  date_format_short: dd/MM/yyyy
+  # You can insert your own languages the /language/ folder following the Lang_ID.yml pattern.
+  # Default languages:
+  # EN - English
+  # ES - Spanish
+  # RU - Russian
+  language: EN
+  disabled_command_regions:
+  - disabled_region
+  disabled_command_worlds:
+  - disabled_world
+  # IN SECONDS
+  announce_update_delay: 2
+   
+  effects:
+    debugmarker: false
+   
+  holograms:
+    ajust_y: 5.0
+    # in seconds
+    task: 5
+    default_maxlines: 10
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+   
+  command:
+    sort_alphabetically: true
+    max_results_per_page: 8
+   
+  # Download the current version at: {THIS_REPO}/ExtensionName/ExtensionName-latest.version.jar
+  # Find the current version in: {THIS_REPO}/ExtensionName/{THIS_VERSION_FILE}.yml
+  extensions:
+    autodownload_enabled: false
+    repo: https://raw.githubusercontent.com/UlrichBR/UKoth/main/extensions/
+    list: extensions.yml
+    version_file: version.yml
+   
+  money:
+    enabled: true
+    currency: $
+    # Compatible Economy Plugins:
+    #CLANBANK - by UlrichBR
+    # VAULT - by Sleaker
+    # PLAYERPOINTS - by Esophose
+    # TOKENENCHANT - by TeamVK
+    type: VAULT
+   
+  koth:
+    default_icon: TOTEM_OF_UNDYING
+    default_capture_time: 60
+    disable_knockback: false
+    default_name: <gradient:#cd2727:#d15f21><bold>{name}</bold></gradient>
+    proximity:
+      enabled: true
+      # blocks around location
+      default: 16
+    maxtime:
+      enabled: true
+      # blocks around location
+      default: 300
+     
+    starter:
+      default_enabled: true
+      item:
+        material: SLIME_BALL
+        force_kothicon: true
+        glow: true
+        name: <#cd2727>Koth Starter
+        lore:
+        - ''
+        - ' <white>Koth: %ukoth_name%'
+        - ' <white>Coord: <white>World: <aqua>%ukoth_world%, <white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z%'
+        - ''
+        - ' <yellow>Click to start the event'
+     
+    key:
+      default_icon: TRIPWIRE_HOOK
+      default_glow: true
+      default_enabled: true
+      acceptable_blocks:
+      - CHEST
+      # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_regions: [
+        ]
+      # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_worlds: [
+        ]
+      hologram:
+        enabled: true
+        task: 30
+        ajust_y: 1.5
+        lines:
+        - <red><bold>Koth Loots</bold>
+        - <aqua>Use the KEY to open!
+   
+  group:
+    default_allow_without_group: true
+   
+  scoreboard:
+    enabled: true
+   
+  wand:
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+   
+  scheduler:
+    # Timezone is the definition of times by locations and countries. you can choose which timezone best fits your schedule
+    # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    timezone: America/Sao_Paulo
+   
+  blocks:
+    manager:
+      enabled: false
+      just_started: true
+      bypass_permission: ukoths.bypass.block_manager
+ 
+# DONT CHANGE THIS
+version:
+  generated: 1.15.2
