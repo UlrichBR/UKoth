@@ -1,0 +1,123 @@
+/////////// INTERNAL AND EXTERNAL
+
+%ukoth_player_group%
+%ukoth_player_single_win_amount%
+%ukoth_player_group_win_amount%
+%ukoth_key%
+%ukoth_usekey%
+%ukoth_next_name%
+%ukoth_next_time%
+%ukoth_active_now%
+%ukoth_active_now_formated%
+%ukoth_starter_state%
+
+%ukoth_top:TYPE:TIME:NUM%
+#Available values ​​for placeholder 'ukoth_top:':
+#TYPE: TOPGROUP and TOPPLAYER
+#TIME: ALL, DAILY, WEEKLY, MONTHLY and YEARLY
+%ukoth_unformated_top:FIND:TYPE:TIME:NUM%
+#Available values ​​for placeholder 'ukoth_unformated_top:':
+#FIND: NAME and AMOUNT
+#TYPE: TOPGROUP and TOPPLAYER
+#TIME: ALL, DAILY, WEEKLY, MONTHLY and YEARLY
+
+/////////// INTERNAL PLACEHOLDERS TO GUI, LANG etc..
+
+%ukoth_direction_relative%
+%ukoth_icon%
+%ukoth_name%
+%ukoth_cuboid_area%
+%ukoth_commands_amount%
+%ukoth_maxtimeleft%
+%ukoth_maxtime_enabled%
+%ukoth_maxtime_size%
+%ukoth_maxtime_endaction%
+%ukoth_maxtime_endaction_bordercolor%
+%ukoth_maxtime_size_formated%
+%ukoth_barmax_% (use ex: %ukoth_barmax_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%ukoth_timeleft%
+%ukoth_control_player%
+%ukoth_control_group%
+%ukoth_capture_time%
+%ukoth_capture_time_formated%
+%ukoth_timeleft
+%ukoth_barleft_% (use ex: %ukoth_barleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%ukoth_world%
+%ukoth_coord_x%
+%ukoth_coord_y%
+%ukoth_coord_z%
+%ukoth_status%
+%ukoth_loot_type%
+%ukoth_loots_amount%
+%ukoth_loot_chance%
+%ukoth_keyreceive_enabled%
+%ukoth_keyreceive_amount%
+%ukoth_proximity_type%
+%ukoth_proximity_size%
+%ukoth_command:<num>%
+%ukoth_scheduler_next_time%
+%ukoth_scheduler_next_name%
+%ukoth_scheduler_amount%
+%ukoth_scheduler:<num>%
+%ukoth_scheduler:<num>:<type>% (type ex: frequency, month_day, week_day, hour, minute, min_players)
+%ukoth_has_owner%
+%ukoth_event_counter%
+%ukoth_is_self_destructing%
+%ukoth_has_warp_formated%
+%ukoth_has_warp%
+%ukoth_warp:<type>% (accept: WORLD, X, Y, Z)
+"%ukoth_settings_state:TYPE% (accept: ALLOWWITHOUTGROUP, ALLOWPLAYERWARP, VISIBLETOPLAYERS)
+%settings_state_formated:TYPE% (accept: ALLOWWITHOUTGROUP, ALLOWPLAYERWARP, VISIBLETOPLAYERS)
+%ukoth_custom_warp_message%
+
+
+/////////// EXTERNAL PLACEHOLDERS WITH PAPI
+
+////////// USE THE NAME BETWEEN CURLY BRACES (ex: %ukoth_{MyKoth}_name%)
+
+%ukoth_{KOTH_NAME}_direction_relative%
+%ukoth_{KOTH_NAME}_icon%
+%ukoth_{KOTH_NAME}_name%
+%ukoth_{KOTH_NAME}_cuboid_area%
+%ukoth_{KOTH_NAME}_commands_amount%
+%ukoth_{KOTH_NAME}_maxtimeleft%
+%ukoth_{KOTH_NAME}_maxtime_enabled%
+%ukoth_{KOTH_NAME}_maxtime_size%
+%ukoth_{KOTH_NAME}_maxtime_endaction%
+%ukoth_{KOTH_NAME}_maxtime_endaction_bordercolor%
+%ukoth_{KOTH_NAME}_maxtime_size_formated%
+%ukoth_{KOTH_NAME}_barmax_% (use ex: %ukoth_{KOTH_NAME}_barmax_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%ukoth_{KOTH_NAME}_timeleft%
+%ukoth_{KOTH_NAME}_control_player%
+%ukoth_{KOTH_NAME}_control_group%
+%ukoth_{KOTH_NAME}_capture_time%
+%ukoth_{KOTH_NAME}_capture_time_formated%
+%ukoth_{KOTH_NAME}_timeleft
+%ukoth_{KOTH_NAME}_barleft_% (use ex: %ukoth_{KOTH_NAME}_barleft_{amount}_length:15_remaining:<gray>■_progress:<#e1b128>■_complete:<#d15f21>■_fullbar:<red>Ending%)
+%ukoth_{KOTH_NAME}_world%
+%ukoth_{KOTH_NAME}_coord_x%
+%ukoth_{KOTH_NAME}_coord_y%
+%ukoth_{KOTH_NAME}_coord_z%
+%ukoth_{KOTH_NAME}_status%
+%ukoth_{KOTH_NAME}_loot_type%
+%ukoth_{KOTH_NAME}_loots_amount%
+%ukoth_{KOTH_NAME}_loot_chance%
+%ukoth_{KOTH_NAME}_keyreceive_enabled%
+%ukoth_{KOTH_NAME}_keyreceive_amount%
+%ukoth_{KOTH_NAME}_proximity_type%
+%ukoth_{KOTH_NAME}_proximity_size%
+%ukoth_{KOTH_NAME}_command:<num>%
+%ukoth_{KOTH_NAME}_scheduler_next_time%
+%ukoth_{KOTH_NAME}_scheduler_next_name%
+%ukoth_{KOTH_NAME}_scheduler_amount%
+%ukoth_{KOTH_NAME}_scheduler:<num>%
+%ukoth_{KOTH_NAME}_scheduler:<num>:<type>% (type ex: frequency, month_day, week_day, hour, minute, min_players)
+%ukoth_{KOTH_NAME}_has_owner%
+%ukoth_{KOTH_NAME}_event_counter%
+%ukoth_{KOTH_NAME}_is_self_destructing%
+%ukoth_{KOTH_NAME}_has_warp_formated%
+%ukoth_{KOTH_NAME}_has_warp%
+%ukoth_{KOTH_NAME}_warp:<type>% (accept: WORLD, X, Y, Z)
+"%ukoth_{KOTH_NAME}_settings_state:TYPE% (accept: ALLOWWITHOUTGROUP, ALLOWPLAYERWARP, VISIBLETOPLAYERS)
+%settings_{KOTH_NAME}_state_formated:TYPE% (accept: ALLOWWITHOUTGROUP, ALLOWPLAYERWARP, VISIBLETOPLAYERS)
+%ukoth_{KOTH_NAME}_custom_warp_message%
