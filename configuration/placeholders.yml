@@ -11,6 +11,10 @@
 %ukoth_active_now_formated%
 %ukoth_starter_state%
 
+%ukoth_timezone:TYPE%
+#Available values ​​for placeholder 'ukoth_timezone:':
+#TYPE: LOCAL and TIME
+
 %ukoth_top:TYPE:TIME:NUM%
 #Available values ​​for placeholder 'ukoth_top:':
 #TYPE: TOPGROUP and TOPPLAYER
