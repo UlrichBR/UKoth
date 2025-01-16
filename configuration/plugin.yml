@@ -1,0 +1,72 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}
+version: ${project.version}
+author: UlrichBR
+website: https://polymart.org/team/ulrichcraft.99
+description: The best and most complete system of Koth.
+api-version: 1.13
+folia-supported: true
+softdepend: [Vault, PlaceholderAPI, WorldGuard, WorldEdit, ProtocolLib, HolographicDisplays, CMI, dynmap, BlueMap, Holograms, DecentHolograms, Guilds, UltimateClans, HuskTowns, BentoBox, TAB, KingdomCraft, SimpleClans, Towny, BetterClans, BetterTeams, Factions, GangsPlus, SternalBoard, PlotSquared, IridiumSkyblock, AnimatedScoreboard, MedievalFactions, SuperiorSkyblock2, Lands, Kingdoms, FeatherBoard, AdvancedClans, Clans, TaroClans, packetevents]
+commands:
+   ukoth:
+      description: Open the help staff menu.
+      usage: /<command>
+      aliases: [ukingofthehill, uk]
+   koth:
+      description: Open the help player menu.
+      usage: /<command>
+      aliases: [kingofthehill]
+permissions:
+   ukoth.*:
+      description: "Bypass every restriction"
+      default: false
+      children:
+         ukoth.admin: true
+         ukoth.player: true
+
+   ukoth.admin.*:
+      description: "Admin permission to manage the plugin"
+      default: false
+      children:
+         ukoth.admin.help: true
+         ukoth.admin.start: true
+         ukoth.admin.stop: true
+         ukoth.admin.tp: true
+         ukoth.admin.reload: true
+         ukoth.admin.wand: true
+         ukoth.admin.create: true
+         ukoth.admin.move: true
+         ukoth.admin.delete: true
+         ukoth.admin.list: true
+         ukoth.admin.view: true
+         ukoth.admin.commands: true
+         ukoth.admin.loots: true
+         ukoth.admin.keys: true
+         ukoth.admin.seticon: true
+         ukoth.admin.proximity: true
+         ukoth.admin.scheduler: true
+         ukoth.admin.setcapture: true
+         ukoth.admin.maxtime: true
+         ukoth.admin.hologram: true
+         ukoth.admin.stats: true
+         ukoth.admin.extension: true
+         ukoth.admin.adminmode: true
+         ukoth.admin.starter: true
+         ukoth.admin.setpos: true
+         ukoth.admin.setname: true
+         ukoth.admin.warp: true
+         ukoth.admin.settings: true
+         ukoth.admin.mode: true
+         ukoth.admin.setcenter: true
+
+   ukoth.player:
+      description: "Default permission package for players"
+      default: false
+      children:
+         ukoth.player.help: true
+         ukoth.player.cancel: true
+         ukoth.player.stats: true
+         ukoth.player.events: true
+         ukoth.player.info: true
+         ukoth.player.loots: true
+         ukoth.player.warp: true
